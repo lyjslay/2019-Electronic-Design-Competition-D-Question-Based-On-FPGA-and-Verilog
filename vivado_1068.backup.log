@@ -1,0 +1,918 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jul 25 10:47:01 2021
+# Process ID: 1068
+# Current directory: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12048 C:\WorkSpace\Diansai\DDS_ALL_0722_per_split\DDS_14bitDAC\DDS_IP.xpr
+# Log file: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/vivado.log
+# Journal file: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 722.305 ; gain = 120.910
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+[Sun Jul 25 10:47:39 2021] Launched synth_1...
+Run output will be captured here: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/synth_1/runme.log
+[Sun Jul 25 10:47:40 2021] Launched impl_2...
+Run output will be captured here: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/impl_2/runme.log
+add_files -norecurse C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v
+WARNING: [filemgmt 56-12] File 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v' cannot be added to the project because it already exists in the project, skipping this file
+add_files -norecurse C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RO.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+[Sun Jul 25 10:50:31 2021] Launched synth_1...
+Run output will be captured here: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/synth_1/runme.log
+[Sun Jul 25 10:50:31 2021] Launched impl_2...
+Run output will be captured here: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/21025DA1030A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/impl_2/dds_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_2 -jobs 4
+[Sun Jul 25 11:03:53 2021] Launched synth_1...
+Run output will be captured here: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/synth_1/runme.log
+[Sun Jul 25 11:03:53 2021] Launched impl_2...
+Run output will be captured here: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/impl_2/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg676-2
+Top: dds_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1880.328 ; gain = 64.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dds_top' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_top' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/.Xil/Vivado-1068-DESKTOP-OA2P2AF/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/.Xil/Vivado-1068-DESKTOP-OA2P2AF/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vga_ctrl' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_ctrl.v:23]
+	Parameter H_SYNC bound to: 10'b0010000000 
+	Parameter H_BACK bound to: 10'b0001011000 
+	Parameter H_VALID bound to: 10'b1100100000 
+	Parameter H_FRONT bound to: 10'b0000101000 
+	Parameter H_TOTAL bound to: 11'b10000100000 
+	Parameter V_SYNC bound to: 10'b0000000100 
+	Parameter V_BACK bound to: 10'b0000010111 
+	Parameter V_VALID bound to: 10'b1001011000 
+	Parameter V_FRONT bound to: 10'b0000000001 
+	Parameter V_TOTAL bound to: 10'b1001110100 
+INFO: [Synth 8-6155] done synthesizing module 'vga_ctrl' (2#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RI_pix' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:23]
+	Parameter CHAR_W bound to: 10'b0010100000 
+	Parameter CHAR_H bound to: 10'b0000100000 
+	Parameter CHAR_START_H bound to: 10'b0110010000 
+	Parameter CHAR_START_V bound to: 10'b0001100100 
+INFO: [Synth 8-6157] synthesizing module 'data_change' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/data_change.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_change' (3#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/data_change.v:23]
+INFO: [Synth 8-226] default block is never used [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:160]
+INFO: [Synth 8-4471] merging register 'char_R_reg[31][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[30][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[29][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[28][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[27][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[26][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[14][15:0]' into 'char_R_reg[20][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[13][15:0]' into 'char_R_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[12][15:0]' into 'char_R_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[11][15:0]' into 'char_R_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[10][15:0]' into 'char_R_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[9][15:0]' into 'char_R_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[6][15:0]' into 'char_R_reg[16][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[5][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[4][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[3][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[2][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[1][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[0][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_I_reg[31][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[30][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[29][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[28][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[27][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[26][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[25][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[23][15:0]' into 'char_I_reg[24][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[21][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[20][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[19][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[18][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[17][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[16][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[15][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[14][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[13][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[12][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[11][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[10][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[9][15:0]' into 'char_I_reg[24][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[8][15:0]' into 'char_I_reg[24][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[7][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[6][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[5][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[4][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[3][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[2][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[1][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[0][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[31][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[30][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[29][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[28][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[27][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[26][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[25][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[24][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[23][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[22][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[21][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[20][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[18][15:0]' into 'char_equal_reg[19][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[17][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[16][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[15][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[14][15:0]' into 'char_equal_reg[19][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[13][15:0]' into 'char_equal_reg[19][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[12][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[11][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[10][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[9][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[8][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[7][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[6][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[5][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[4][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[3][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[2][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[1][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[0][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'data_0_reg[31][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[30][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[29][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[28][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[27][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[26][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[25][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[19][15:0]' into 'data_0_reg[20][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[11][15:0]' into 'char_R_reg[25][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[10][15:0]' into 'data_0_reg[20][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[9][15:0]' into 'data_0_reg[20][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[8][15:0]' into 'data_0_reg[21][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[4][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[3][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[2][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[1][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[0][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_1_reg[31][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+INFO: [Synth 8-4471] merging register 'data_1_reg[30][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+INFO: [Synth 8-4471] merging register 'data_1_reg[29][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[31] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[30] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[29] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[28] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[27] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[26] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[14] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[13] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[12] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[11] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[10] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[9] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[6] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[5] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[4] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[3] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[2] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[1] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[0] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[31] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[30] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[29] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[28] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[27] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[26] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[25] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[23] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[21] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[20] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[19] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[18] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[17] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[16] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[15] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[14] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[13] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[12] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[11] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[10] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[9] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[8] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[7] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[6] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[5] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[4] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[3] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[2] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[1] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[0] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[31] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[30] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[29] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[28] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[27] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[26] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[25] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[24] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[23] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[22] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[21] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[20] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[18] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[17] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[16] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[15] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[14] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[13] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[12] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[11] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[10] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[9] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[8] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[7] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[6] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[5] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[4] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[3] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[2] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[1] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[0] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[31] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[30] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[29] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[28] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[27] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[26] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[25] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[19] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[11] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[10] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[9] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[8] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[4] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[3] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[2] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[1] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[0] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_1_reg[31] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+WARNING: [Synth 8-6014] Unused sequential element data_1_reg[30] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+WARNING: [Synth 8-6014] Unused sequential element data_1_reg[29] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3848] Net update_flag in module/entity RI_pix does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'RI_pix' (4#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RO_pix' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RO.v:23]
+	Parameter CHAR_W bound to: 10'b0010100000 
+	Parameter CHAR_H bound to: 10'b0000100000 
+	Parameter CHAR_START_H bound to: 10'b0110010000 
+	Parameter CHAR_START_V bound to: 10'b0010000100 
+INFO: [Synth 8-226] default block is never used [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RO.v:160]
+WARNING: [Synth 8-3848] Net update_flag in module/entity RO_pix does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RO.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'RO_pix' (5#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'freq_chart' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v:23]
+	Parameter CHART_W bound to: 10'b0100000000 
+	Parameter CHART_H bound to: 10'b0100000000 
+	Parameter CHART_START_H bound to: 10'b0001100100 
+	Parameter CHART_START_V bound to: 10'b0001100100 
+	Parameter LINE_W bound to: 2'b11 
+	Parameter WAIT bound to: 3'b001 
+	Parameter UPDATING bound to: 3'b010 
+	Parameter DONE bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v:131]
+INFO: [Synth 8-6157] synthesizing module 'ram_dual' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/ram_dual.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ram_dual' (6#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/ram_dual.v:1]
+WARNING: [Synth 8-3848] Net q1 in module/entity freq_chart does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v:157]
+INFO: [Synth 8-6155] done synthesizing module 'freq_chart' (7#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v:23]
+WARNING: [Synth 8-689] width (25) of port connection 'din' does not match port width (8) of module 'freq_chart' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_top.v:102]
+WARNING: [Synth 8-3848] Net din in module/entity vga_top does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_top.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'vga_top' (8#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dds_compiler_1' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/.Xil/Vivado-1068-DESKTOP-OA2P2AF/realtime/dds_compiler_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dds_compiler_1' (9#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/.Xil/Vivado-1068-DESKTOP-OA2P2AF/realtime/dds_compiler_1_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 's_axis_config_tdata' does not match port width (16) of module 'dds_compiler_1' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:103]
+INFO: [Synth 8-6157] synthesizing module 'sweep_ctrl' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/sweep.v:23]
+	Parameter static_1k bound to: 0 - type: integer 
+	Parameter sweep_1k_to_100k bound to: 1 - type: integer 
+	Parameter PEROID bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/clk_div.v:23]
+	Parameter cnt_max_100k bound to: 8'b11111001 
+	Parameter cnt_max_1m bound to: 6'b011000 
+	Parameter cnt_max_10m bound to: 3'b001 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (10#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sweep_ctrl' (11#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/sweep.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adc_samp_ctrl' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/adc_samp.v:23]
+	Parameter Count bound to: 3'b001 
+INFO: [Synth 8-226] default block is never used [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/adc_samp.v:68]
+INFO: [Synth 8-226] default block is never used [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/adc_samp.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'adc_samp_ctrl' (12#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/adc_samp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'all_ctrl' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/all_ctrl.v:25]
+	Parameter MODE_SWEEP_CNT bound to: 24999999 - type: integer 
+	Parameter MODE_STATIC_CNT bound to: 4999999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'all_ctrl' (13#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/all_ctrl.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Calculate' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:23]
+	Parameter DDS_IN_VPP bound to: 22'b0000000000000001100100 
+	Parameter Rs_in bound to: 1000 - type: integer 
+	Parameter RL_out bound to: 2000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/.Xil/Vivado-1068-DESKTOP-OA2P2AF/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (14#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/.Xil/Vivado-1068-DESKTOP-OA2P2AF/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (9) of port connection 'doutb' does not match port width (8) of module 'blk_mem_gen_0' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:331]
+WARNING: [Synth 8-3848] Net cutoff_freq in module/entity Calculate does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'Calculate' (15#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'dout_xl' does not match port width (9) of module 'Calculate' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:162]
+WARNING: [Synth 8-3848] Net clk_xl in module/entity dds_top does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:60]
+WARNING: [Synth 8-3848] Net en_xl in module/entity dds_top does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:61]
+WARNING: [Synth 8-3848] Net dout_x in module/entity dds_top does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'dds_top' (16#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:23]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[7]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[6]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[5]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[4]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[3]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[2]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[1]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[0]
+WARNING: [Synth 8-3331] design Calculate has unconnected port en_xl
+WARNING: [Synth 8-3331] design freq_chart has unconnected port data_require
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[7]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[6]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[5]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[4]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[3]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[2]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[1]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[0]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[7]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[6]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[5]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[4]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[3]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[2]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[1]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1940.633 ; gain = 125.289
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin inst3:update_flag to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:86]
+WARNING: [Synth 8-3295] tying undriven pin inst3:update_flag to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RO.v:86]
+WARNING: [Synth 8-3295] tying undriven pin chart_ram:data[0] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v:155]
+WARNING: [Synth 8-3295] tying undriven pin calculate_top:clk_xl to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:148]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1940.633 ; gain = 125.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1940.633 ; gain = 125.289
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.dcp' for cell 'dds_ip_top'
+INFO: [Project 1-454] Reading design checkpoint 'c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'vga_top_inst/vga_clk_gen'
+INFO: [Project 1-454] Reading design checkpoint 'c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'calculate_top/GainFreqRam'
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tfgg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'sweep_top/dac_clk_gen/gen_100m_clk/inst'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'sweep_top/dac_clk_gen/gen_100m_clk/inst'
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'vga_top_inst/vga_clk_gen/inst'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'vga_top_inst/vga_clk_gen/inst'
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'sweep_top/dac_clk_gen/gen_100m_clk/inst'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'sweep_top/dac_clk_gen/gen_100m_clk/inst'
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'vga_top_inst/vga_clk_gen/inst'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'vga_top_inst/vga_clk_gen/inst'
+Parsing XDC File [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc:162]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'rstn'. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc:165]
+WARNING: [Vivado 12-584] No ports matched 'rstn'. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc:166]
+Finished Parsing XDC File [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/dds_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2314.176 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2314.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 2326.219 ; gain = 510.875
+152 Infos, 147 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 2326.219 ; gain = 510.875
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+[Sun Jul 25 11:06:35 2021] Launched impl_2...
+Run output will be captured here: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/impl_2/runme.log
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+set_property PROGRAM.FILE {C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/impl_2/dds_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/impl_2/dds_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg676-2
+Top: dds_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2395.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dds_top' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_top' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/.Xil/Vivado-1068-DESKTOP-OA2P2AF/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/.Xil/Vivado-1068-DESKTOP-OA2P2AF/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vga_ctrl' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_ctrl.v:23]
+	Parameter H_SYNC bound to: 10'b0010000000 
+	Parameter H_BACK bound to: 10'b0001011000 
+	Parameter H_VALID bound to: 10'b1100100000 
+	Parameter H_FRONT bound to: 10'b0000101000 
+	Parameter H_TOTAL bound to: 11'b10000100000 
+	Parameter V_SYNC bound to: 10'b0000000100 
+	Parameter V_BACK bound to: 10'b0000010111 
+	Parameter V_VALID bound to: 10'b1001011000 
+	Parameter V_FRONT bound to: 10'b0000000001 
+	Parameter V_TOTAL bound to: 10'b1001110100 
+INFO: [Synth 8-6155] done synthesizing module 'vga_ctrl' (2#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RI_pix' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:23]
+	Parameter CHAR_W bound to: 10'b0010100000 
+	Parameter CHAR_H bound to: 10'b0000100000 
+	Parameter CHAR_START_H bound to: 10'b0110010000 
+	Parameter CHAR_START_V bound to: 10'b0001100100 
+INFO: [Synth 8-6157] synthesizing module 'data_change' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/data_change.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_change' (3#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/data_change.v:23]
+INFO: [Synth 8-226] default block is never used [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:160]
+INFO: [Synth 8-4471] merging register 'char_R_reg[31][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[30][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[29][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[28][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[27][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[26][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[14][15:0]' into 'char_R_reg[20][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[13][15:0]' into 'char_R_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[12][15:0]' into 'char_R_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[11][15:0]' into 'char_R_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[10][15:0]' into 'char_R_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[9][15:0]' into 'char_R_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[6][15:0]' into 'char_R_reg[16][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[5][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[4][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[3][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[2][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[1][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[0][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_I_reg[31][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[30][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[29][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[28][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[27][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[26][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[25][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[23][15:0]' into 'char_I_reg[24][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[21][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[20][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[19][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[18][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[17][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[16][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[15][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[14][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[13][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[12][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[11][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[10][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[9][15:0]' into 'char_I_reg[24][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[8][15:0]' into 'char_I_reg[24][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[7][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[6][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[5][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[4][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[3][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[2][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[1][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[0][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[31][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[30][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[29][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[28][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[27][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[26][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[25][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[24][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[23][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[22][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[21][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[20][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[18][15:0]' into 'char_equal_reg[19][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[17][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[16][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[15][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[14][15:0]' into 'char_equal_reg[19][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[13][15:0]' into 'char_equal_reg[19][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[12][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[11][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[10][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[9][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[8][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[7][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[6][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[5][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[4][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[3][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[2][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[1][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[0][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'data_0_reg[31][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[30][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[29][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[28][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[27][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[26][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[25][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[19][15:0]' into 'data_0_reg[20][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[11][15:0]' into 'char_R_reg[25][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[10][15:0]' into 'data_0_reg[20][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[9][15:0]' into 'data_0_reg[20][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[8][15:0]' into 'data_0_reg[21][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[4][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[3][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[2][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[1][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[0][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_1_reg[31][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+INFO: [Synth 8-4471] merging register 'data_1_reg[30][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+INFO: [Synth 8-4471] merging register 'data_1_reg[29][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[31] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[30] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[29] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[28] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[27] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[26] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[14] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[13] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[12] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[11] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[10] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[9] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[6] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[5] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[4] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[3] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[2] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[1] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[0] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[31] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[30] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[29] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[28] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[27] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[26] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[25] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[23] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[21] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[20] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[19] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[18] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[17] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[16] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[15] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[14] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[13] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[12] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[11] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[10] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[9] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[8] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[7] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[6] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[5] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[4] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[3] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[2] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[1] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[0] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[31] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[30] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[29] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[28] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[27] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[26] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[25] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[24] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[23] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[22] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[21] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[20] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[18] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[17] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[16] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[15] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[14] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[13] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[12] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[11] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[10] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[9] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[8] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[7] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[6] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[5] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[4] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[3] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[2] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[1] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[0] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[31] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[30] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[29] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[28] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[27] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[26] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[25] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[19] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[11] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[10] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[9] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[8] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[4] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[3] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[2] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[1] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[0] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_1_reg[31] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+WARNING: [Synth 8-6014] Unused sequential element data_1_reg[30] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+WARNING: [Synth 8-6014] Unused sequential element data_1_reg[29] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3848] Net update_flag in module/entity RI_pix does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'RI_pix' (4#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RO_pix' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RO.v:23]
+	Parameter CHAR_W bound to: 10'b0010100000 
+	Parameter CHAR_H bound to: 10'b0000100000 
+	Parameter CHAR_START_H bound to: 10'b0110010000 
+	Parameter CHAR_START_V bound to: 10'b0010000100 
+INFO: [Synth 8-226] default block is never used [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RO.v:160]
+WARNING: [Synth 8-3848] Net update_flag in module/entity RO_pix does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RO.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'RO_pix' (5#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'freq_chart' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v:23]
+	Parameter CHART_W bound to: 10'b0100000000 
+	Parameter CHART_H bound to: 10'b0100000000 
+	Parameter CHART_START_H bound to: 10'b0001100100 
+	Parameter CHART_START_V bound to: 10'b0001100100 
+	Parameter LINE_W bound to: 2'b11 
+	Parameter WAIT bound to: 3'b001 
+	Parameter UPDATING bound to: 3'b010 
+	Parameter DONE bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v:131]
+INFO: [Synth 8-6157] synthesizing module 'ram_dual' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/ram_dual.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ram_dual' (6#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/ram_dual.v:1]
+WARNING: [Synth 8-3848] Net q1 in module/entity freq_chart does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v:157]
+INFO: [Synth 8-6155] done synthesizing module 'freq_chart' (7#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v:23]
+WARNING: [Synth 8-689] width (25) of port connection 'din' does not match port width (8) of module 'freq_chart' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_top.v:102]
+WARNING: [Synth 8-3848] Net din in module/entity vga_top does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_top.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'vga_top' (8#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dds_compiler_1' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/.Xil/Vivado-1068-DESKTOP-OA2P2AF/realtime/dds_compiler_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dds_compiler_1' (9#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/.Xil/Vivado-1068-DESKTOP-OA2P2AF/realtime/dds_compiler_1_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 's_axis_config_tdata' does not match port width (16) of module 'dds_compiler_1' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:103]
+INFO: [Synth 8-6157] synthesizing module 'sweep_ctrl' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/sweep.v:23]
+	Parameter static_1k bound to: 0 - type: integer 
+	Parameter sweep_1k_to_100k bound to: 1 - type: integer 
+	Parameter PEROID bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/clk_div.v:23]
+	Parameter cnt_max_100k bound to: 8'b11111001 
+	Parameter cnt_max_1m bound to: 6'b011000 
+	Parameter cnt_max_10m bound to: 3'b001 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (10#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sweep_ctrl' (11#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/sweep.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adc_samp_ctrl' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/adc_samp.v:23]
+	Parameter Count bound to: 3'b001 
+INFO: [Synth 8-226] default block is never used [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/adc_samp.v:68]
+INFO: [Synth 8-226] default block is never used [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/adc_samp.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'adc_samp_ctrl' (12#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/adc_samp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'all_ctrl' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/all_ctrl.v:25]
+	Parameter MODE_SWEEP_CNT bound to: 24999999 - type: integer 
+	Parameter MODE_STATIC_CNT bound to: 4999999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'all_ctrl' (13#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/all_ctrl.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Calculate' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:23]
+	Parameter DDS_IN_VPP bound to: 22'b0000000000000001100100 
+	Parameter Rs_in bound to: 1000 - type: integer 
+	Parameter RL_out bound to: 2000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/.Xil/Vivado-1068-DESKTOP-OA2P2AF/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (14#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/.Xil/Vivado-1068-DESKTOP-OA2P2AF/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (9) of port connection 'doutb' does not match port width (8) of module 'blk_mem_gen_0' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:331]
+WARNING: [Synth 8-3848] Net cutoff_freq in module/entity Calculate does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'Calculate' (15#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'dout_xl' does not match port width (9) of module 'Calculate' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:162]
+WARNING: [Synth 8-3848] Net clk_xl in module/entity dds_top does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:60]
+WARNING: [Synth 8-3848] Net en_xl in module/entity dds_top does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:61]
+WARNING: [Synth 8-3848] Net dout_x in module/entity dds_top does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'dds_top' (16#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:23]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[7]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[6]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[5]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[4]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[3]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[2]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[1]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[0]
+WARNING: [Synth 8-3331] design Calculate has unconnected port en_xl
+WARNING: [Synth 8-3331] design freq_chart has unconnected port data_require
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[7]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[6]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[5]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[4]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[3]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[2]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[1]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[0]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[7]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[6]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[5]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[4]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[3]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[2]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[1]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2395.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin inst3:update_flag to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:86]
+WARNING: [Synth 8-3295] tying undriven pin inst3:update_flag to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RO.v:86]
+WARNING: [Synth 8-3295] tying undriven pin chart_ram:data[0] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v:155]
+WARNING: [Synth 8-3295] tying undriven pin calculate_top:clk_xl to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:148]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2395.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2395.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.dcp' for cell 'dds_ip_top'
+INFO: [Project 1-454] Reading design checkpoint 'c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'vga_top_inst/vga_clk_gen'
+INFO: [Project 1-454] Reading design checkpoint 'c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'calculate_top/GainFreqRam'
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'sweep_top/dac_clk_gen/gen_100m_clk/inst'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'sweep_top/dac_clk_gen/gen_100m_clk/inst'
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'vga_top_inst/vga_clk_gen/inst'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'vga_top_inst/vga_clk_gen/inst'
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'sweep_top/dac_clk_gen/gen_100m_clk/inst'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'sweep_top/dac_clk_gen/gen_100m_clk/inst'
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'vga_top_inst/vga_clk_gen/inst'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'vga_top_inst/vga_clk_gen/inst'
+Parsing XDC File [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc:164]
+WARNING: [Vivado 12-584] No ports matched 'rstn'. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'rstn'. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc:167]
+Finished Parsing XDC File [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/dds_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2459.438 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2459.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2459.438 ; gain = 64.254
+151 Infos, 147 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2459.438 ; gain = 64.254
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+[Sun Jul 25 11:15:51 2021] Launched synth_1...
+Run output will be captured here: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/synth_1/runme.log
+[Sun Jul 25 11:15:51 2021] Launched impl_2...
+Run output will be captured here: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/impl_2/runme.log
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+[Sun Jul 25 12:20:44 2021] Launched synth_1...
+Run output will be captured here: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/synth_1/runme.log
+[Sun Jul 25 12:20:44 2021] Launched impl_2...
+Run output will be captured here: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/impl_2/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/21025DA1030A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/impl_2/dds_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/impl_2/dds_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/impl_2/dds_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 25 12:55:26 2021...

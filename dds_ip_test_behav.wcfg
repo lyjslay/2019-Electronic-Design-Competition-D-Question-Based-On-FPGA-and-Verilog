@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Calculate_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Calculate_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="10730000000001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="214"></NameColumnWidth>
+      <ValueColumnWidth column_width="179"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/Calculate_tb/calculate_top/circuit_in_sig" type="array">
+      <obj_property name="ElementShortName">circuit_in_sig[11:0]</obj_property>
+      <obj_property name="ObjectShortName">circuit_in_sig[11:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculate_tb/calculate_top/freq_mode" type="logic">
+      <obj_property name="ElementShortName">freq_mode</obj_property>
+      <obj_property name="ObjectShortName">freq_mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculate_tb/calculate_top/current_freq" type="array">
+      <obj_property name="ElementShortName">current_freq[7:0]</obj_property>
+      <obj_property name="ObjectShortName">current_freq[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculate_tb/calculate_top/sweep_onefreq_done" type="logic">
+      <obj_property name="ElementShortName">sweep_onefreq_done</obj_property>
+      <obj_property name="ObjectShortName">sweep_onefreq_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculate_tb/calculate_top/sweep_oneper_done" type="logic">
+      <obj_property name="ElementShortName">sweep_oneper_done</obj_property>
+      <obj_property name="ObjectShortName">sweep_oneper_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculate_tb/calculate_top/input_res_q" type="array">
+      <obj_property name="ElementShortName">input_res_q[15:0]</obj_property>
+      <obj_property name="ObjectShortName">input_res_q[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculate_tb/calculate_top/output_res_q" type="array">
+      <obj_property name="ElementShortName">output_res_q[15:0]</obj_property>
+      <obj_property name="ObjectShortName">output_res_q[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculate_tb/calculate_top/in_current_max" type="array">
+      <obj_property name="ElementShortName">in_current_max[11:0]</obj_property>
+      <obj_property name="ObjectShortName">in_current_max[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculate_tb/calculate_top/sum_in_max" type="array">
+      <obj_property name="ElementShortName">sum_in_max[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_in_max[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculate_tb/calculate_top/aver_in_max" type="array">
+      <obj_property name="ElementShortName">aver_in_max[11:0]</obj_property>
+      <obj_property name="ObjectShortName">aver_in_max[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculate_tb/calculate_top/current_Av" type="array">
+      <obj_property name="ElementShortName">current_Av[23:0]</obj_property>
+      <obj_property name="ObjectShortName">current_Av[23:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

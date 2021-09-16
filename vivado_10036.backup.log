@@ -1,0 +1,1427 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 23 09:12:11 2021
+# Process ID: 10036
+# Current directory: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13824 C:\WorkSpace\Diansai\DDS_ALL_0722_per_split\DDS_14bitDAC\DDS_IP.xpr
+# Log file: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/vivado.log
+# Journal file: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.xpr
+INFO: [Project 1-313] Project file moved from 'E:/DS/DDS_ALL/DDS_14bitDAC' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/WorkSpace/Diansai/ram_data.coe', nor could it be found using path 'E:/DS/ram_data.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'dds_compiler_0' is locked:
+* Current project part 'xc7z010clg400-2' and the part 'xc7vx485tffg1157-1' used to customize the IP 'dds_compiler_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'dds_compiler_1' is locked:
+* Current project part 'xc7z010clg400-2' and the part 'xc7vx485tffg1157-1' used to customize the IP 'dds_compiler_1' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 743.598 ; gain = 147.844
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/test_pix.v C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/ram_dual.v C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_top.v C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_ctrl.v C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/data_change.v C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/test_chart.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/test_pix.v] -no_script -reset -force -quiet
+remove_files  C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/test_pix.v
+add_files -norecurse C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/test_chart.v] -no_script -reset -force -quiet
+remove_files  C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/test_chart.v
+add_files -norecurse C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property part xc7a100tfgg676-2 [current_project]
+WARNING: [IP_Flow 19-2162] IP 'dds_compiler_0' is locked:
+* Current project part 'xc7a100tfgg676-2' and the part 'xc7vx485tffg1157-1' used to customize the IP 'dds_compiler_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'dds_compiler_1' is locked:
+* Current project part 'xc7a100tfgg676-2' and the part 'xc7vx485tffg1157-1' used to customize the IP 'dds_compiler_1' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* Current project part 'xc7a100tfgg676-2' and the part 'xc7z010clg400-2' used to customize the IP 'clk_wiz_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_0' is locked:
+* Current project part 'xc7a100tfgg676-2' and the part 'xc7z010clg400-2' used to customize the IP 'blk_mem_gen_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'ila_0' is locked:
+* Current project part 'xc7a100tfgg676-2' and the part 'xc7z010clg400-2' used to customize the IP 'ila_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+reset_run dds_compiler_1_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/dds_compiler_1_synth_1
+
+reset_run clk_wiz_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/clk_wiz_0_synth_1
+
+reset_run blk_mem_gen_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/blk_mem_gen_0_synth_1
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+WARNING: [Project 1-577] IP run dds_compiler_1_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-577] IP run clk_wiz_0_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-577] IP run blk_mem_gen_0_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Implementation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+
+WARNING: [Project 1-576] IP 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci' in run dds_compiler_1_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' in run clk_wiz_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' in run blk_mem_gen_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Fri Jul 23 12:13:30 2021] Launched dds_compiler_1_synth_1, clk_wiz_0_synth_1, blk_mem_gen_0_synth_1...
+Run output will be captured here:
+dds_compiler_1_synth_1: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/dds_compiler_1_synth_1/runme.log
+clk_wiz_0_synth_1: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/clk_wiz_0_synth_1/runme.log
+blk_mem_gen_0_synth_1: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/blk_mem_gen_0_synth_1/runme.log
+[Fri Jul 23 12:13:30 2021] Launched synth_1...
+Run output will be captured here: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/synth_1/runme.log
+export_ip_user_files -of_objects  [get_files C:/WorkSpace/Diansai/ram_data.coe] -no_script -reset -force -quiet
+remove_files  C:/WorkSpace/Diansai/ram_data.coe
+remove_files  C:/WorkSpace/Diansai/ram_data.coe
+WARNING: [Vivado 12-818] No files matched 'C:/WorkSpace/Diansai/ram_data.coe'
+export_ip_user_files -of_objects  [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset ila_0 C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/ila_0/ila_0.xci
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/ila_0_synth_1
+
+INFO: [Project 1-386] Moving file 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/ila_0/ila_0.xci' from fileset 'ila_0' to fileset 'sources_1'.
+file delete -force C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/ila_0
+INFO: [Device 21-403] Loading part xc7z010clg400-2
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [Device 21-403] Loading part xc7a100tfgg676-2
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+upgrade_ip [get_ips]
+Upgrading 'blk_mem_gen_0'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/blk_mem_gen_0_synth_1
+
+INFO: [Project 1-386] Moving file 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' from fileset 'blk_mem_gen_0' to fileset 'sources_1'.
+WARNING: [IP_Flow 19-4050] The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+WARNING: [IP_Flow 19-3932] Unable to set the value 'true' on parameter 'Load Init File' due to the following failure - 
+Validation failed for parameter 'Coe File(Coe_File)' with value 'no_coe_file_loaded' for IP 'blk_mem_gen_0'. No COE file loaded
+. Restoring to an old valid value of 'false'
+INFO: [IP_Flow 19-3420] Updated blk_mem_gen_0 to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'blk_mem_gen_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Upgrading 'clk_wiz_0'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/clk_wiz_0_synth_1
+
+INFO: [Project 1-386] Moving file 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated clk_wiz_0 to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+Upgrading 'dds_compiler_0'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/dds_compiler_0_synth_1
+
+INFO: [Project 1-386] Moving file 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci' from fileset 'dds_compiler_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated dds_compiler_0 to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_0'...
+Upgrading 'dds_compiler_1'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/dds_compiler_1_synth_1
+
+INFO: [Project 1-386] Moving file 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci' from fileset 'dds_compiler_1' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated dds_compiler_1 to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_1'...
+upgrade_ip: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1237.699 ; gain = 6.559
+c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Read_Width_A {8} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8}] [get_ips blk_mem_gen_0]
+generate_target all [get_files  C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+launch_runs -jobs 4 blk_mem_gen_0_synth_1
+[Fri Jul 23 12:18:06 2021] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/blk_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files/sim_scripts -ip_user_files_dir C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files -ipstatic_source_dir C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/modelsim} {questa=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/questa} {riviera=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/riviera} {activehdl=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+generate_target all [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+export_ip_user_files -of_objects [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files/sim_scripts -ip_user_files_dir C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files -ipstatic_source_dir C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/modelsim} {questa=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/questa} {riviera=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/riviera} {activehdl=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset clk_wiz_0
+set_property top clk_wiz_0 [get_fileset clk_wiz_0]
+move_files -fileset [get_fileset clk_wiz_0] [get_files -of_objects [get_fileset sources_1] C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+generate_target all [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_compiler_1'...
+export_ip_user_files -of_objects [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] -directory C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files/sim_scripts -ip_user_files_dir C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files -ipstatic_source_dir C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/modelsim} {questa=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/questa} {riviera=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/riviera} {activehdl=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset dds_compiler_1
+set_property top dds_compiler_1 [get_fileset dds_compiler_1]
+move_files -fileset [get_fileset dds_compiler_1] [get_files -of_objects [get_fileset sources_1] C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+launch_run {clk_wiz_0_synth_1 dds_compiler_1_synth_1}
+[Fri Jul 23 12:31:03 2021] Launched clk_wiz_0_synth_1, dds_compiler_1_synth_1...
+Run output will be captured here:
+clk_wiz_0_synth_1: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/clk_wiz_0_synth_1/runme.log
+dds_compiler_1_synth_1: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/dds_compiler_1_synth_1/runme.log
+wait_on_run clk_wiz_0_synth_1
+
+[Fri Jul 23 12:31:03 2021] Waiting for clk_wiz_0_synth_1 to finish...
+[Fri Jul 23 12:31:08 2021] Waiting for clk_wiz_0_synth_1 to finish...
+[Fri Jul 23 12:31:14 2021] Waiting for clk_wiz_0_synth_1 to finish...
+[Fri Jul 23 12:31:19 2021] Waiting for clk_wiz_0_synth_1 to finish...
+[Fri Jul 23 12:31:29 2021] Waiting for clk_wiz_0_synth_1 to finish...
+[Fri Jul 23 12:31:39 2021] Waiting for clk_wiz_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log clk_wiz_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source clk_wiz_0.tcl -notrace
+Command: synth_design -top clk_wiz_0 -part xc7a100tfgg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6480 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 424.039 ; gain = 102.730
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41045]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 18 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 20.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 9 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (2#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41045]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (3#1) [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (4#1) [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 480.109 ; gain = 158.801
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 480.109 ; gain = 158.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 480.109 ; gain = 158.801
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tfgg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'inst'
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'inst'
+Parsing XDC File [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/clk_wiz_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/clk_wiz_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 733.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 735.508 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 735.508 ; gain = 1.559
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 735.508 ; gain = 414.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 735.508 ; gain = 414.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/clk_wiz_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 735.508 ; gain = 414.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 735.508 ; gain = 414.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 735.508 ; gain = 414.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 790.574 ; gain = 469.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 790.574 ; gain = 469.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 800.152 ; gain = 478.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 800.152 ; gain = 478.844
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 800.152 ; gain = 478.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 800.152 ; gain = 478.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 800.152 ; gain = 478.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 800.152 ; gain = 478.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 800.152 ; gain = 478.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     3|
+|2     |PLLE2_ADV |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+------------------+------+
+|      |Instance |Module            |Cells |
++------+---------+------------------+------+
+|1     |top      |                  |     4|
+|2     |  inst   |clk_wiz_0_clk_wiz |     4|
++------+---------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 800.152 ; gain = 478.844
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 800.152 ; gain = 223.445
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 800.152 ; gain = 478.844
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 812.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 812.625 ; gain = 502.801
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 812.625 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP clk_wiz_0, cache-ID = 9f24d0d98a7b829d
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 816.965 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file clk_wiz_0_utilization_synth.rpt -pb clk_wiz_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 23 12:31:35 2021...
+[Fri Jul 23 12:31:39 2021] clk_wiz_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:35 . Memory (MB): peak = 1317.020 ; gain = 0.000
+wait_on_run clk_wiz_0_synth_1
+wait_on_run dds_compiler_1_synth_1
+
+[Fri Jul 23 12:31:39 2021] Waiting for clk_wiz_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log clk_wiz_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source clk_wiz_0.tcl -notrace
+Command: synth_design -top clk_wiz_0 -part xc7a100tfgg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6480 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 424.039 ; gain = 102.730
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41045]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 18 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 20.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 9 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (2#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41045]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (3#1) [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (4#1) [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 480.109 ; gain = 158.801
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 480.109 ; gain = 158.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 480.109 ; gain = 158.801
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tfgg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'inst'
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'inst'
+Parsing XDC File [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/clk_wiz_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/clk_wiz_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 733.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 735.508 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 735.508 ; gain = 1.559
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 735.508 ; gain = 414.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 735.508 ; gain = 414.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/clk_wiz_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 735.508 ; gain = 414.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 735.508 ; gain = 414.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 735.508 ; gain = 414.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 790.574 ; gain = 469.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 790.574 ; gain = 469.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 800.152 ; gain = 478.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 800.152 ; gain = 478.844
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 800.152 ; gain = 478.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 800.152 ; gain = 478.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 800.152 ; gain = 478.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 800.152 ; gain = 478.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 800.152 ; gain = 478.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     3|
+|2     |PLLE2_ADV |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+------------------+------+
+|      |Instance |Module            |Cells |
++------+---------+------------------+------+
+|1     |top      |                  |     4|
+|2     |  inst   |clk_wiz_0_clk_wiz |     4|
++------+---------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 800.152 ; gain = 478.844
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 800.152 ; gain = 223.445
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 800.152 ; gain = 478.844
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 812.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 812.625 ; gain = 502.801
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 812.625 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP clk_wiz_0, cache-ID = 9f24d0d98a7b829d
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 816.965 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file clk_wiz_0_utilization_synth.rpt -pb clk_wiz_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 23 12:31:35 2021...
+[Fri Jul 23 12:31:39 2021] clk_wiz_0_synth_1 finished
+[Fri Jul 23 12:31:39 2021] Waiting for dds_compiler_1_synth_1 to finish...
+[Fri Jul 23 12:31:44 2021] Waiting for dds_compiler_1_synth_1 to finish...
+[Fri Jul 23 12:31:49 2021] Waiting for dds_compiler_1_synth_1 to finish...
+[Fri Jul 23 12:31:54 2021] Waiting for dds_compiler_1_synth_1 to finish...
+[Fri Jul 23 12:32:04 2021] Waiting for dds_compiler_1_synth_1 to finish...
+[Fri Jul 23 12:32:14 2021] Waiting for dds_compiler_1_synth_1 to finish...
+[Fri Jul 23 12:32:24 2021] Waiting for dds_compiler_1_synth_1 to finish...
+
+*** Running vivado
+    with args -log dds_compiler_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dds_compiler_1.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source dds_compiler_1.tcl -notrace
+Command: synth_design -top dds_compiler_1 -part xc7a100tfgg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1164 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 422.426 ; gain = 102.477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dds_compiler_1' [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/synth/dds_compiler_1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/synth/dds_compiler_1.vhd:74]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/synth/dds_compiler_1.vhd:74]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/synth/dds_compiler_1.vhd:74]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/synth/dds_compiler_1.vhd:74]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/synth/dds_compiler_1.vhd:74]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/synth/dds_compiler_1.vhd:74]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/synth/dds_compiler_1.vhd:74]
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
+	Parameter C_MODULUS bound to: 9 - type: integer 
+	Parameter C_ACCUMULATOR_WIDTH bound to: 14 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_HAS_PHASE_OUT bound to: 1 - type: integer 
+	Parameter C_HAS_PHASEGEN bound to: 1 - type: integer 
+	Parameter C_HAS_SINCOS bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 8 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_NEGATIVE_COSINE bound to: 0 - type: integer 
+	Parameter C_NEGATIVE_SINE bound to: 0 - type: integer 
+	Parameter C_NOISE_SHAPING bound to: 0 - type: integer 
+	Parameter C_OUTPUTS_REQUIRED bound to: 0 - type: integer 
+	Parameter C_OUTPUT_FORM bound to: 0 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 14 - type: integer 
+	Parameter C_PHASE_ANGLE_WIDTH bound to: 14 - type: integer 
+	Parameter C_PHASE_INCREMENT bound to: 1 - type: integer 
+	Parameter C_PHASE_INCREMENT_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_RESYNC bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET bound to: 2 - type: integer 
+	Parameter C_PHASE_OFFSET_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_OPTIMISE_GOAL bound to: 0 - type: integer 
+	Parameter C_USE_DSP48 bound to: 0 - type: integer 
+	Parameter C_POR_MODE bound to: 0 - type: integer 
+	Parameter C_AMPLITUDE bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_S_PHASE bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_CONFIG bound to: 1 - type: integer 
+	Parameter C_S_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_M_DATA bound to: 1 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_PHASE bound to: 1 - type: integer 
+	Parameter C_M_PHASE_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_M_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_17' declared at 'c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/hdl/dds_compiler_v6_0_vh_rfs.vhd:47292' bound to instance 'U0' of component 'dds_compiler_v6_0_17' [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/synth/dds_compiler_1.vhd:179]
+INFO: [Synth 8-256] done synthesizing module 'dds_compiler_1' (9#1) [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/synth/dds_compiler_1.vhd:71]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized10 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized10 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized10 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized10 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized10 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized7 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized7 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized23 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized23 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized23 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized23 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized23 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized18 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized18 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized18 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized20 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized20 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized20 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized16 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized16 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized16 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized14 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized14 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized14 has unconnected port SINIT
+WARNING: [Synth 8-3331] design sin_cos has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design accum has unconnected port chan_addr[0]
+WARNING: [Synth 8-3331] design accum has unconnected port chan_addr_del2[0]
+WARNING: [Synth 8-3331] design accum has unconnected port chan_addr_del3[0]
+WARNING: [Synth 8-3331] design accum has unconnected port addr_i[3]
+WARNING: [Synth 8-3331] design accum has unconnected port addr_i[2]
+WARNING: [Synth 8-3331] design accum has unconnected port addr_i[1]
+WARNING: [Synth 8-3331] design accum has unconnected port addr_i[0]
+WARNING: [Synth 8-3331] design accum has unconnected port phase_inc_we
+WARNING: [Synth 8-3331] design accum has unconnected port phase_adj_we
+WARNING: [Synth 8-3331] design accum has unconnected port poff_in[13]
+WARNING: [Synth 8-3331] design accum has unconnected port poff_in[12]
+WARNING: [Synth 8-3331] design accum has unconnected port poff_in[11]
+WARNING: [Synth 8-3331] design accum has unconnected port poff_in[10]
+WARNING: [Synth 8-3331] design accum has unconnected port poff_in[9]
+WARNING: [Synth 8-3331] design accum has unconnected port poff_in[8]
+WARNING: [Synth 8-3331] design accum has unconnected port poff_in[7]
+WARNING: [Synth 8-3331] design accum has unconnected port poff_in[6]
+WARNING: [Synth 8-3331] design accum has unconnected port poff_in[5]
+WARNING: [Synth 8-3331] design accum has unconnected port poff_in[4]
+WARNING: [Synth 8-3331] design accum has unconnected port poff_in[3]
+WARNING: [Synth 8-3331] design accum has unconnected port poff_in[2]
+WARNING: [Synth 8-3331] design accum has unconnected port poff_in[1]
+WARNING: [Synth 8-3331] design accum has unconnected port poff_in[0]
+WARNING: [Synth 8-3331] design accum has unconnected port data_i[13]
+WARNING: [Synth 8-3331] design accum has unconnected port data_i[12]
+WARNING: [Synth 8-3331] design accum has unconnected port data_i[11]
+WARNING: [Synth 8-3331] design accum has unconnected port data_i[10]
+WARNING: [Synth 8-3331] design accum has unconnected port data_i[9]
+WARNING: [Synth 8-3331] design accum has unconnected port data_i[8]
+WARNING: [Synth 8-3331] design accum has unconnected port data_i[7]
+WARNING: [Synth 8-3331] design accum has unconnected port data_i[6]
+WARNING: [Synth 8-3331] design accum has unconnected port data_i[5]
+WARNING: [Synth 8-3331] design accum has unconnected port data_i[4]
+WARNING: [Synth 8-3331] design accum has unconnected port data_i[3]
+WARNING: [Synth 8-3331] design accum has unconnected port data_i[2]
+WARNING: [Synth 8-3331] design accum has unconnected port data_i[1]
+WARNING: [Synth 8-3331] design accum has unconnected port data_i[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized12 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized12 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized12 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized1 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized1 has unconnected port SINIT
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port RFD
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port CHANNEL[0]
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port COSINE[13]
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port COSINE[12]
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port COSINE[11]
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port COSINE[10]
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port COSINE[9]
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port COSINE[8]
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port COSINE[7]
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port COSINE[6]
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port COSINE[5]
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port COSINE[4]
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port COSINE[3]
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port COSINE[2]
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port COSINE[1]
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port COSINE[0]
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port ADDR[0]
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port REG_SELECT
+WARNING: [Synth 8-3331] design dds_compiler_v6_0_17_core has unconnected port SCLR
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 555.223 ; gain = 235.273
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 555.223 ; gain = 235.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 555.223 ; gain = 235.273
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/dds_compiler_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/dds_compiler_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 830.992 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 831.094 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 832.660 ; gain = 1.668
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 832.660 ; gain = 512.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 832.660 ; gain = 512.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/dds_compiler_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 832.660 ; gain = 512.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5547] Trying to map ROM "sin_cos_lut" into Block RAM due to explicit "ram_style" or "rom_style" specification
+WARNING: [Synth 8-6040] Register i_rtl.i_quarter_table.i_has_sin.i_addr_mod_stage1.mod_sin_addr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 832.660 ; gain = 512.711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 832.660 ; gain = 512.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance U0/i_synth/i_0/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_synth/i_0/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 832.660 ; gain = 512.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 832.660 ; gain = 512.711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 841.980 ; gain = 522.031
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 841.980 ; gain = 522.031
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 841.980 ; gain = 522.031
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 841.980 ; gain = 522.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 841.980 ; gain = 522.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 841.980 ; gain = 522.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 841.980 ; gain = 522.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |     4|
+|2     |LUT2       |    37|
+|3     |LUT3       |    16|
+|4     |LUT4       |     6|
+|5     |LUT5       |     5|
+|6     |LUT6       |    11|
+|7     |RAMB36E1_4 |     1|
+|8     |RAMB36E1_5 |     1|
+|9     |SRL16E     |    17|
+|10    |FDRE       |   181|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 841.980 ; gain = 522.031
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 841.980 ; gain = 244.594
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 841.980 ; gain = 522.031
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 847.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 847.617 ; gain = 539.199
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 847.617 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/dds_compiler_1_synth_1/dds_compiler_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP dds_compiler_1, cache-ID = 397de83f4753a895
+INFO: [Coretcl 2-1174] Renamed 24 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 847.617 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/dds_compiler_1_synth_1/dds_compiler_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dds_compiler_1_utilization_synth.rpt -pb dds_compiler_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 23 12:32:21 2021...
+[Fri Jul 23 12:32:24 2021] dds_compiler_1_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:45 . Memory (MB): peak = 1317.059 ; gain = 0.039
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Calculate_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Calculate_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Calculate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/sweep.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sweep_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sim_1/new/calculate_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Calculate_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj Calculate_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/sim/dds_compiler_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dds_compiler_1'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 857c6d86d77a4bc59b1f77e521413793 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L dds_compiler_v6_0_17 -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Calculate_tb_behav xil_defaultlib.Calculate_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 's_axis_config_tdata' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sim_1/new/calculate_tb.v:109]
+WARNING: [VRFC 10-3091] actual bit length 24 differs from formal bit length 9 for port 'dout_xl' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sim_1/new/calculate_tb.v:98]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 24 for port 'input_res_q' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sim_1/new/calculate_tb.v:99]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 24 for port 'output_res_q' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sim_1/new/calculate_tb.v:100]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'doutb' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:331]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package xbip_utils_v3_0_9.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_17.pkg_dds_compiler_v6_0_17
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_hdl_comps
+Compiling package xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv_comp
+Compiling package axi_utils_v2_0_5.axi_utils_v2_0_5_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_5.global_util_pkg
+Compiling package axi_utils_v2_0_5.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_17.pkg_betas
+Compiling package dds_compiler_v6_0_17.pkg_alphas
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.Calculate
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_rdy [\dds_compiler_v6_0_17_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.pipe_add [\pipe_add(c_width=14,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_core [\dds_compiler_v6_0_17_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv [\dds_compiler_v6_0_17_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17 [\dds_compiler_v6_0_17(c_xdevicef...]
+Compiling architecture dds_compiler_1_arch of entity xil_defaultlib.dds_compiler_1 [dds_compiler_1_default]
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=18,CLKIN...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.sweep_ctrl
+Compiling module xil_defaultlib.Calculate_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Calculate_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim/xsim.dir/Calculate_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 23 12:32:39 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1317.059 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Calculate_tb_behav -key {Behavioral:sim_1:Functional:Calculate_tb} -tclbatch {Calculate_tb.tcl} -view {C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/dds_ip_test_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/dds_ip_test_behav.wcfg
+source Calculate_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000000ns
+Block Memory Generator module Calculate_tb.calculate_top.GainFreqRam.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run: Time (s): cpu = 00:05:29 ; elapsed = 00:35:46 . Memory (MB): peak = 1370.613 ; gain = 0.000
+xsim: Time (s): cpu = 00:05:33 ; elapsed = 00:35:49 . Memory (MB): peak = 1370.613 ; gain = 53.555
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Calculate_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000000ns
+launch_simulation: Time (s): cpu = 00:05:35 ; elapsed = 00:36:04 . Memory (MB): peak = 1370.613 ; gain = 53.555
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 23 15:14:55 2021...

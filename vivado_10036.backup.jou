@@ -1,0 +1,74 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 23 09:12:11 2021
+# Process ID: 10036
+# Current directory: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13824 C:\WorkSpace\Diansai\DDS_ALL_0722_per_split\DDS_14bitDAC\DDS_IP.xpr
+# Log file: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/vivado.log
+# Journal file: C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/test_pix.v C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/ram_dual.v C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_top.v C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_ctrl.v C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/data_change.v C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/test_chart.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/test_pix.v] -no_script -reset -force -quiet
+remove_files  C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/test_pix.v
+add_files -norecurse C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/test_chart.v] -no_script -reset -force -quiet
+remove_files  C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/test_chart.v
+add_files -norecurse C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property part xc7a100tfgg676-2 [current_project]
+reset_run dds_compiler_1_synth_1
+reset_run clk_wiz_0_synth_1
+reset_run blk_mem_gen_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files C:/WorkSpace/Diansai/ram_data.coe] -no_script -reset -force -quiet
+remove_files  C:/WorkSpace/Diansai/ram_data.coe
+remove_files  C:/WorkSpace/Diansai/ram_data.coe
+export_ip_user_files -of_objects  [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset ila_0 C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/ila_0/ila_0.xci
+file delete -force C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/ila_0
+upgrade_ip [get_ips]
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Read_Width_A {8} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8}] [get_ips blk_mem_gen_0]
+generate_target all [get_files  C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+launch_runs -jobs 4 blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files/sim_scripts -ip_user_files_dir C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files -ipstatic_source_dir C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/modelsim} {questa=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/questa} {riviera=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/riviera} {activehdl=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+export_ip_user_files -of_objects [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files/sim_scripts -ip_user_files_dir C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files -ipstatic_source_dir C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/modelsim} {questa=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/questa} {riviera=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/riviera} {activehdl=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset clk_wiz_0
+set_property top clk_wiz_0 [get_fileset clk_wiz_0]
+move_files -fileset [get_fileset clk_wiz_0] [get_files -of_objects [get_fileset sources_1] C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+generate_target all [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+export_ip_user_files -of_objects [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] -directory C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files/sim_scripts -ip_user_files_dir C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files -ipstatic_source_dir C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/modelsim} {questa=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/questa} {riviera=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/riviera} {activehdl=C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset dds_compiler_1
+set_property top dds_compiler_1 [get_fileset dds_compiler_1]
+move_files -fileset [get_fileset dds_compiler_1] [get_files -of_objects [get_fileset sources_1] C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+launch_run {clk_wiz_0_synth_1 dds_compiler_1_synth_1}
+wait_on_run clk_wiz_0_synth_1
+
+wait_on_run clk_wiz_0_synth_1
+wait_on_run dds_compiler_1_synth_1
+
+launch_simulation
+open_wave_config C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/dds_ip_test_behav.wcfg
+source Calculate_tb.tcl
+close_sim

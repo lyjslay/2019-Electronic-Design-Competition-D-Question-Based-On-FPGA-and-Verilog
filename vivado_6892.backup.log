@@ -1,0 +1,880 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 22 10:47:16 2021
+# Process ID: 6892
+# Current directory: E:/DS/DDS_ALL/DDS_14bitDAC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9600 E:\DS\DDS_ALL\DDS_14bitDAC\DDS_IP.xpr
+# Log file: E:/DS/DDS_ALL/DDS_14bitDAC/vivado.log
+# Journal file: E:/DS/DDS_ALL/DDS_14bitDAC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado2018_3/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'dds_compiler_0' is locked:
+* Current project part 'xc7z010clg400-2' and the part 'xc7vx485tffg1157-1' used to customize the IP 'dds_compiler_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'dds_compiler_1' is locked:
+* Current project part 'xc7z010clg400-2' and the part 'xc7vx485tffg1157-1' used to customize the IP 'dds_compiler_1' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 820.488 ; gain = 213.957
+update_compile_order -fileset sources_1
+reset_run dds_compiler_1_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.runs/dds_compiler_1_synth_1
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+WARNING: [Project 1-577] IP run dds_compiler_1_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci
+
+WARNING: [Project 1-576] IP 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci' in run dds_compiler_1_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Thu Jul 22 10:56:50 2021] Launched dds_compiler_1_synth_1...
+Run output will be captured here: E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.runs/dds_compiler_1_synth_1/runme.log
+[Thu Jul 22 10:56:50 2021] Launched synth_1...
+Run output will be captured here: E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.runs/synth_1/runme.log
+launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/synth/timing/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-2
+INFO: [Project 1-454] Reading design checkpoint 'e:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.dcp' for cell 'dds_ip_top'
+INFO: [Project 1-454] Reading design checkpoint 'e:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'calculate_top/GainFreqRam'
+INFO: [Project 1-454] Reading design checkpoint 'e:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'sweep_top/dac_clk_gen/gen_100m_clk'
+INFO: [Netlist 29-17] Analyzing 233 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z010clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'sweep_top/dac_clk_gen/gen_100m_clk/inst'
+Finished Parsing XDC File [e:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'sweep_top/dac_clk_gen/gen_100m_clk/inst'
+Parsing XDC File [e:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'sweep_top/dac_clk_gen/gen_100m_clk/inst'
+Finished Parsing XDC File [e:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'sweep_top/dac_clk_gen/gen_100m_clk/inst'
+Parsing XDC File [E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc]
+Finished Parsing XDC File [E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1181.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 2 instances
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1288.238 ; gain = 398.277
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/synth/timing/xsim/Calculate_tb_time_synth.v"
+write_verilog: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1342.074 ; gain = 52.383
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/synth/timing/xsim/Calculate_tb_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/synth/timing/xsim/Calculate_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/synth/timing/xsim/Calculate_tb_time_synth.sdf
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Calculate_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/synth/timing/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/synth/timing/xsim/ram_data.coe'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj Calculate_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/synth/timing/xsim/Calculate_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LDCP_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module LDCP_HD1
+INFO: [VRFC 10-311] analyzing module Calculate
+INFO: [VRFC 10-311] analyzing module adc_samp_ctrl
+INFO: [VRFC 10-311] analyzing module all_ctrl
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module dds_compiler_1
+INFO: [VRFC 10-311] analyzing module dds_top
+INFO: [VRFC 10-311] analyzing module sweep_ctrl
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_v8_4_2
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_v8_4_2_synth
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__dds_compiler_v6_0_17
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__accum
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__dds_compiler_v6_0_17_core
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__dds_compiler_v6_0_17_rdy
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__dds_compiler_v6_0_17_viv
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__pipe_add
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__sin_cos
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv_0
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv__parameterized12
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv__parameterized14
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv__parameterized16
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv__parameterized16_7
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv__parameterized18
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv__parameterized18_1
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv__parameterized18_2
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv__parameterized18_3
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv__parameterized18_4
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv__parameterized18_6
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv__parameterized20
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv__parameterized20_5
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv__parameterized7
+INFO: [VRFC 10-311] analyzing module dds_compiler_1__xbip_pipe_v3_0_5_viv__parameterized7_8
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Calculate
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Calculate' [E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'clk_div' [E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/clk_div.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/sweep.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sweep_ctrl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'sweep_ctrl' [E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/sweep.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sim_1/new/calculate_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Calculate_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/synth/timing/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 857c6d86d77a4bc59b1f77e521413793 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot Calculate_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.Calculate_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 's_axis_config_tdata' [E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sim_1/new/calculate_tb.v:112]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.GND
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(RAM_MODE="SDP...
+Compiling module simprims_ver.RAMB18E1(RAM_MODE="SDP",READ_WID...
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_prim_w...
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_prim_w...
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_generi...
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_top
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_v8_4_2...
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_v8_4_2
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.Calculate
+Compiling module simprims_ver.VCC
+Compiling module simprims_ver.FDRE_default
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.dds_compiler_1__pipe_add
+Compiling module xil_defaultlib.dds_compiler_1__accum
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.SRL16E_default
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module simprims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,RDA...
+Compiling module simprims_ver.RAMB36E1(DOA_REG=1,INIT_00=256'b...
+Compiling module simprims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,RDA...
+Compiling module simprims_ver.RAMB36E1(DOA_REG=1,INIT_02=256'b...
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT6
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module xil_defaultlib.dds_compiler_1__sin_cos
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module simprims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.dds_compiler_1__dds_compiler_v6_...
+Compiling module xil_defaultlib.dds_compiler_1__dds_compiler_v6_...
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module xil_defaultlib.dds_compiler_1__xbip_pipe_v3_0_5...
+Compiling module xil_defaultlib.dds_compiler_1__dds_compiler_v6_...
+Compiling module xil_defaultlib.dds_compiler_1__dds_compiler_v6_...
+Compiling module xil_defaultlib.dds_compiler_1
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.PLLE2_ADV(CLKFBOUT_MULT=18,CLKIN...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.sweep_ctrl
+Compiling module xil_defaultlib.Calculate_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Calculate_tb_time_synth
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/synth/timing/xsim/xsim.dir/Calculate_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Jul 22 10:58:15 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1724.199 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Calculate_tb_time_synth -key {Post-Synthesis:sim_1:Timing:Calculate_tb} -tclbatch {Calculate_tb.tcl} -view {E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg
+source Calculate_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000000ns
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1762.145 ; gain = 1.898
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1762.145 ; gain = 22.414
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Calculate_tb_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000000ns
+launch_simulation: Time (s): cpu = 00:00:36 ; elapsed = 00:00:44 . Memory (MB): peak = 1762.145 ; gain = 872.184
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/sum_in_max}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/sum_in_min}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/aver_in_max}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/aver_in_min}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/in_current_max}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/in_current_min}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:01:22 ; elapsed = 00:12:45 . Memory (MB): peak = 1789.082 ; gain = 3.488
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Calculate_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim/ram_data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Calculate_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Calculate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/sweep.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sweep_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sim_1/new/calculate_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Calculate_tb
+"xvhdl --incr --relax -prj Calculate_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 857c6d86d77a4bc59b1f77e521413793 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L dds_compiler_v6_0_17 -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Calculate_tb_behav xil_defaultlib.Calculate_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 's_axis_config_tdata' [E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sim_1/new/calculate_tb.v:109]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package xbip_utils_v3_0_9.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_17.pkg_dds_compiler_v6_0_17
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_hdl_comps
+Compiling package xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv_comp
+Compiling package axi_utils_v2_0_5.axi_utils_v2_0_5_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_5.global_util_pkg
+Compiling package axi_utils_v2_0_5.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_17.pkg_betas
+Compiling package dds_compiler_v6_0_17.pkg_alphas
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.Calculate
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_rdy [\dds_compiler_v6_0_17_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.pipe_add [\pipe_add(c_width=14,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.accum [\accum(c_xdevicefamily="virtex7"...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.sin_cos [\sin_cos(c_addr_width=14,c_data_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_core [\dds_compiler_v6_0_17_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv [\dds_compiler_v6_0_17_viv(c_accu...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17 [\dds_compiler_v6_0_17(c_accumula...]
+Compiling architecture dds_compiler_1_arch of entity xil_defaultlib.dds_compiler_1 [dds_compiler_1_default]
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=18,CLKIN...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.sweep_ctrl
+Compiling module xil_defaultlib.Calculate_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Calculate_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim/xsim.dir/Calculate_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 83.137 ; gain = 1.133
+INFO: [Common 17-206] Exiting Webtalk at Thu Jul 22 11:18:01 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1795.652 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Calculate_tb_behav -key {Behavioral:sim_1:Functional:Calculate_tb} -tclbatch {Calculate_tb.tcl} -view {E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg
+source Calculate_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module Calculate_tb.calculate_top.GainFreqRam.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1815.133 ; gain = 18.688
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1815.500 ; gain = 19.848
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:24 . Memory (MB): peak = 1815.500 ; gain = 23.871
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/circuit_in_sig}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/in_current_max}} {{/Calculate_tb/calculate_top/in_current_min}} {{/Calculate_tb/calculate_top/sum_in_max}} {{/Calculate_tb/calculate_top/sum_in_min}} {{/Calculate_tb/calculate_top/aver_in_max}} {{/Calculate_tb/calculate_top/aver_in_min}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/sweep_onefreq_done}} {{/Calculate_tb/calculate_top/sweep_oneper_done}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/freq_mode}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/current_freq}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/current_Av}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/input_res}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/output_res}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module Calculate_tb.calculate_top.GainFreqRam.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run: Time (s): cpu = 00:00:30 ; elapsed = 00:02:50 . Memory (MB): peak = 2057.578 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:37 ; elapsed = 00:07:30 . Memory (MB): peak = 2057.578 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2057.578 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Calculate_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim/ram_data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Calculate_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Calculate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/sweep.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sweep_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sim_1/new/calculate_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Calculate_tb
+"xvhdl --incr --relax -prj Calculate_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 857c6d86d77a4bc59b1f77e521413793 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L dds_compiler_v6_0_17 -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Calculate_tb_behav xil_defaultlib.Calculate_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 's_axis_config_tdata' [E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sim_1/new/calculate_tb.v:109]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package xbip_utils_v3_0_9.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_17.pkg_dds_compiler_v6_0_17
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_hdl_comps
+Compiling package xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv_comp
+Compiling package axi_utils_v2_0_5.axi_utils_v2_0_5_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_5.global_util_pkg
+Compiling package axi_utils_v2_0_5.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_17.pkg_betas
+Compiling package dds_compiler_v6_0_17.pkg_alphas
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.Calculate
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_rdy [\dds_compiler_v6_0_17_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.pipe_add [\pipe_add(c_width=14,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.accum [\accum(c_xdevicefamily="virtex7"...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.sin_cos [\sin_cos(c_addr_width=14,c_data_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_core [\dds_compiler_v6_0_17_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv [\dds_compiler_v6_0_17_viv(c_accu...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17 [\dds_compiler_v6_0_17(c_accumula...]
+Compiling architecture dds_compiler_1_arch of entity xil_defaultlib.dds_compiler_1 [dds_compiler_1_default]
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=18,CLKIN...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.sweep_ctrl
+Compiling module xil_defaultlib.Calculate_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Calculate_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2057.578 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Calculate_tb_behav -key {Behavioral:sim_1:Functional:Calculate_tb} -tclbatch {Calculate_tb.tcl} -view {E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg
+source Calculate_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module Calculate_tb.calculate_top.GainFreqRam.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:01:49 . Memory (MB): peak = 2057.578 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:01:51 . Memory (MB): peak = 2057.578 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Calculate_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:02:00 . Memory (MB): peak = 2057.578 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Calculate_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim/ram_data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Calculate_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Calculate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/sweep.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sweep_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sim_1/new/calculate_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Calculate_tb
+"xvhdl --incr --relax -prj Calculate_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 857c6d86d77a4bc59b1f77e521413793 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L dds_compiler_v6_0_17 -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Calculate_tb_behav xil_defaultlib.Calculate_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 's_axis_config_tdata' [E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sim_1/new/calculate_tb.v:109]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package xbip_utils_v3_0_9.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_17.pkg_dds_compiler_v6_0_17
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_hdl_comps
+Compiling package xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv_comp
+Compiling package axi_utils_v2_0_5.axi_utils_v2_0_5_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_5.global_util_pkg
+Compiling package axi_utils_v2_0_5.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_17.pkg_betas
+Compiling package dds_compiler_v6_0_17.pkg_alphas
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.Calculate
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_rdy [\dds_compiler_v6_0_17_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.pipe_add [\pipe_add(c_width=14,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.accum [\accum(c_xdevicefamily="virtex7"...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.sin_cos [\sin_cos(c_addr_width=14,c_data_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_core [\dds_compiler_v6_0_17_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv [\dds_compiler_v6_0_17_viv(c_accu...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17 [\dds_compiler_v6_0_17(c_accumula...]
+Compiling architecture dds_compiler_1_arch of entity xil_defaultlib.dds_compiler_1 [dds_compiler_1_default]
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=18,CLKIN...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.sweep_ctrl
+Compiling module xil_defaultlib.Calculate_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Calculate_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2057.578 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Calculate_tb_behav -key {Behavioral:sim_1:Functional:Calculate_tb} -tclbatch {Calculate_tb.tcl} -view {E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg
+source Calculate_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module Calculate_tb.calculate_top.GainFreqRam.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 2057.656 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 2057.656 ; gain = 0.078
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Calculate_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:30 . Memory (MB): peak = 2057.656 ; gain = 0.078
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/circuit_in_sig}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/freq_mode}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/current_freq}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/sweep_onefreq_done}} {{/Calculate_tb/calculate_top/sweep_oneper_done}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/input_res_q}} {{/Calculate_tb/calculate_top/output_res_q}} {{/Calculate_tb/calculate_top/Av_1k_q}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/in_current_max}} {{/Calculate_tb/calculate_top/sum_in_max}} {{/Calculate_tb/calculate_top/aver_in_max}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+dds_ip_test_behav.wcfg
+add_wave {{/Calculate_tb/calculate_top/current_Av}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module Calculate_tb.calculate_top.GainFreqRam.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run: Time (s): cpu = 00:00:50 ; elapsed = 00:07:27 . Memory (MB): peak = 2062.738 ; gain = 0.957
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+save_wave_config {E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Calculate_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim/ram_data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Calculate_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Calculate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/sweep.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sweep_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sim_1/new/calculate_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Calculate_tb
+"xvhdl --incr --relax -prj Calculate_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 857c6d86d77a4bc59b1f77e521413793 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L dds_compiler_v6_0_17 -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Calculate_tb_behav xil_defaultlib.Calculate_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 's_axis_config_tdata' [E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.srcs/sim_1/new/calculate_tb.v:109]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package xbip_utils_v3_0_9.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_17.pkg_dds_compiler_v6_0_17
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_hdl_comps
+Compiling package xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv_comp
+Compiling package axi_utils_v2_0_5.axi_utils_v2_0_5_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_5.global_util_pkg
+Compiling package axi_utils_v2_0_5.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_17.pkg_betas
+Compiling package dds_compiler_v6_0_17.pkg_alphas
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.Calculate
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_rdy [\dds_compiler_v6_0_17_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.pipe_add [\pipe_add(c_width=14,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.accum [\accum(c_xdevicefamily="virtex7"...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.sin_cos [\sin_cos(c_addr_width=14,c_data_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_core [\dds_compiler_v6_0_17_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv [\dds_compiler_v6_0_17_viv(c_accu...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17 [\dds_compiler_v6_0_17(c_accumula...]
+Compiling architecture dds_compiler_1_arch of entity xil_defaultlib.dds_compiler_1 [dds_compiler_1_default]
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=18,CLKIN...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.sweep_ctrl
+Compiling module xil_defaultlib.Calculate_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Calculate_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2062.738 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Calculate_tb_behav -key {Behavioral:sim_1:Functional:Calculate_tb} -tclbatch {Calculate_tb.tcl} -view {E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg
+source Calculate_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module Calculate_tb.calculate_top.GainFreqRam.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.

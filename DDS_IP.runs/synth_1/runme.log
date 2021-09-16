@@ -1,0 +1,1297 @@
+
+*** Running vivado
+    with args -log dds_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dds_top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source dds_top.tcl -notrace
+Command: synth_design -top dds_top -part xc7a100tfgg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5724 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 425.887 ; gain = 106.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dds_top' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_top' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/synth_1/.Xil/Vivado-11080-DESKTOP-OA2P2AF/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/synth_1/.Xil/Vivado-11080-DESKTOP-OA2P2AF/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vga_ctrl' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_ctrl.v:23]
+	Parameter H_SYNC bound to: 10'b0010000000 
+	Parameter H_BACK bound to: 10'b0001011000 
+	Parameter H_VALID bound to: 10'b1100100000 
+	Parameter H_FRONT bound to: 10'b0000101000 
+	Parameter H_TOTAL bound to: 11'b10000100000 
+	Parameter V_SYNC bound to: 10'b0000000100 
+	Parameter V_BACK bound to: 10'b0000010111 
+	Parameter V_VALID bound to: 10'b1001011000 
+	Parameter V_FRONT bound to: 10'b0000000001 
+	Parameter V_TOTAL bound to: 10'b1001110100 
+INFO: [Synth 8-6155] done synthesizing module 'vga_ctrl' (2#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RI_pix' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:23]
+	Parameter CHAR_W bound to: 10'b0010100000 
+	Parameter CHAR_H bound to: 10'b0000100000 
+	Parameter CHAR_START_H bound to: 10'b0110010000 
+	Parameter CHAR_START_V bound to: 10'b0001100100 
+INFO: [Synth 8-6157] synthesizing module 'data_change' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/data_change.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_change' (3#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/data_change.v:23]
+INFO: [Synth 8-226] default block is never used [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:160]
+INFO: [Synth 8-4471] merging register 'char_R_reg[31][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[30][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[29][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[28][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[27][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[26][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[14][15:0]' into 'char_R_reg[20][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[13][15:0]' into 'char_R_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[12][15:0]' into 'char_R_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[11][15:0]' into 'char_R_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[10][15:0]' into 'char_R_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[9][15:0]' into 'char_R_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[6][15:0]' into 'char_R_reg[16][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[5][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[4][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[3][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[2][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[1][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_R_reg[0][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+INFO: [Synth 8-4471] merging register 'char_I_reg[31][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[30][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[29][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[28][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[27][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[26][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[25][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[23][15:0]' into 'char_I_reg[24][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[21][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[20][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[19][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[18][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[17][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[16][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[15][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[14][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[13][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[12][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[11][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[10][15:0]' into 'char_I_reg[22][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[9][15:0]' into 'char_I_reg[24][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[8][15:0]' into 'char_I_reg[24][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[7][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[6][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[5][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[4][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[3][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[2][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[1][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_I_reg[0][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[31][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[30][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[29][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[28][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[27][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[26][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[25][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[24][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[23][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[22][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[21][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[20][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[18][15:0]' into 'char_equal_reg[19][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[17][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[16][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[15][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[14][15:0]' into 'char_equal_reg[19][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[13][15:0]' into 'char_equal_reg[19][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[12][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[11][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[10][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[9][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[8][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[7][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[6][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[5][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[4][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[3][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[2][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[1][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'char_equal_reg[0][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+INFO: [Synth 8-4471] merging register 'data_0_reg[31][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[30][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[29][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[28][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[27][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[26][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[25][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[19][15:0]' into 'data_0_reg[20][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[11][15:0]' into 'char_R_reg[25][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[10][15:0]' into 'data_0_reg[20][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[9][15:0]' into 'data_0_reg[20][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[8][15:0]' into 'data_0_reg[21][15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[4][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[3][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[2][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[1][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_0_reg[0][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+INFO: [Synth 8-4471] merging register 'data_1_reg[31][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+INFO: [Synth 8-4471] merging register 'data_1_reg[30][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+INFO: [Synth 8-4471] merging register 'data_1_reg[29][15:0]' into 'space_reg[15:0]' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[31] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[30] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[29] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[28] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[27] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[26] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[14] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[13] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[12] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[11] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[10] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[9] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[6] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[5] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[4] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[3] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[2] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[1] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_R_reg[0] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:193]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[31] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[30] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[29] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[28] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[27] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[26] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[25] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[23] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[21] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[20] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[19] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[18] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[17] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[16] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[15] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[14] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[13] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[12] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[11] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[10] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[9] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[8] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[7] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[6] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[5] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[4] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[3] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[2] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[1] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_I_reg[0] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[31] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[30] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[29] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[28] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[27] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[26] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[25] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[24] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[23] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[22] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[21] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[20] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[18] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[17] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[16] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[15] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[14] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[13] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[12] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[11] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[10] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[9] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[8] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[7] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[6] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[5] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[4] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[3] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[2] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[1] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element char_equal_reg[0] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[31] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[30] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[29] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[28] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[27] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[26] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[25] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[19] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[11] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[10] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[9] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[8] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[4] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[3] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[2] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[1] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_0_reg[0] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:293]
+WARNING: [Synth 8-6014] Unused sequential element data_1_reg[31] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+WARNING: [Synth 8-6014] Unused sequential element data_1_reg[30] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+WARNING: [Synth 8-6014] Unused sequential element data_1_reg[29] was removed.  [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:326]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'RI_pix' (4#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RO_pix' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RO.v:23]
+	Parameter CHAR_W bound to: 10'b0010100000 
+	Parameter CHAR_H bound to: 10'b0000100000 
+	Parameter CHAR_START_H bound to: 10'b0110010000 
+	Parameter CHAR_START_V bound to: 10'b0010000100 
+INFO: [Synth 8-226] default block is never used [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RO.v:160]
+INFO: [Synth 8-6155] done synthesizing module 'RO_pix' (5#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/RO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vpp_pix' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/watch/vpp.v:23]
+	Parameter CHAR_W bound to: 10'b0001100000 
+	Parameter CHAR_H bound to: 10'b0000100000 
+	Parameter CHAR_START_H bound to: 10'b0110010000 
+	Parameter CHAR_START_V bound to: 10'b0010100100 
+INFO: [Synth 8-226] default block is never used [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/watch/vpp.v:156]
+INFO: [Synth 8-6155] done synthesizing module 'vpp_pix' (6#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/watch/vpp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vmin_pix' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/watch/vmin.v:23]
+	Parameter CHAR_W bound to: 10'b0001100000 
+	Parameter CHAR_H bound to: 10'b0000100000 
+	Parameter CHAR_START_H bound to: 10'b0110010000 
+	Parameter CHAR_START_V bound to: 10'b0011000100 
+INFO: [Synth 8-226] default block is never used [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/watch/vmin.v:156]
+INFO: [Synth 8-6155] done synthesizing module 'vmin_pix' (7#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/watch/vmin.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vmax_pix' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/watch/vmax.v:23]
+	Parameter CHAR_W bound to: 10'b0001100000 
+	Parameter CHAR_H bound to: 10'b0000100000 
+	Parameter CHAR_START_H bound to: 10'b0110010000 
+	Parameter CHAR_START_V bound to: 10'b0011100100 
+INFO: [Synth 8-226] default block is never used [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/watch/vmax.v:155]
+INFO: [Synth 8-6155] done synthesizing module 'vmax_pix' (8#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/watch/vmax.v:23]
+INFO: [Synth 8-6157] synthesizing module 'freq_chart' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v:23]
+	Parameter CHART_W bound to: 10'b0100000000 
+	Parameter CHART_H bound to: 10'b0100000000 
+	Parameter CHART_START_H bound to: 10'b0001100100 
+	Parameter CHART_START_V bound to: 10'b0001100100 
+	Parameter LINE_W bound to: 2'b11 
+	Parameter WAIT bound to: 3'b001 
+	Parameter UPDATING bound to: 3'b010 
+	Parameter DONE bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v:131]
+INFO: [Synth 8-6157] synthesizing module 'ram_dual' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/ram_dual.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ram_dual' (9#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/ram_dual.v:1]
+WARNING: [Synth 8-3848] Net q1 in module/entity freq_chart does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v:157]
+INFO: [Synth 8-6155] done synthesizing module 'freq_chart' (10#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v:23]
+WARNING: [Synth 8-689] width (25) of port connection 'din' does not match port width (8) of module 'freq_chart' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_top.v:141]
+WARNING: [Synth 8-3848] Net din in module/entity vga_top does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_top.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'vga_top' (11#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/vga_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dds_compiler_1' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/synth_1/.Xil/Vivado-11080-DESKTOP-OA2P2AF/realtime/dds_compiler_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dds_compiler_1' (12#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/synth_1/.Xil/Vivado-11080-DESKTOP-OA2P2AF/realtime/dds_compiler_1_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 's_axis_config_tdata' does not match port width (16) of module 'dds_compiler_1' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:109]
+INFO: [Synth 8-6157] synthesizing module 'sweep_ctrl' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/sweep.v:23]
+	Parameter static_1k bound to: 0 - type: integer 
+	Parameter sweep_1k_to_100k bound to: 1 - type: integer 
+	Parameter PEROID bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/clk_div.v:23]
+	Parameter cnt_max_100k bound to: 8'b11111001 
+	Parameter cnt_max_1m bound to: 6'b011000 
+	Parameter cnt_max_10m bound to: 3'b001 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (13#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sweep_ctrl' (14#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/sweep.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adc_samp_ctrl' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/adc_samp.v:23]
+	Parameter Count bound to: 3'b001 
+INFO: [Synth 8-226] default block is never used [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/adc_samp.v:68]
+INFO: [Synth 8-226] default block is never used [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/adc_samp.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'adc_samp_ctrl' (15#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/adc_samp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'all_ctrl' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/all_ctrl.v:25]
+	Parameter MODE_SWEEP_CNT bound to: 24999999 - type: integer 
+	Parameter MODE_STATIC_CNT bound to: 4999999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'all_ctrl' (16#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/all_ctrl.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Calculate' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:23]
+	Parameter Rs_in bound to: 985 - type: integer 
+	Parameter RL_out bound to: 2000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/synth_1/.Xil/Vivado-11080-DESKTOP-OA2P2AF/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (17#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/synth_1/.Xil/Vivado-11080-DESKTOP-OA2P2AF/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (24) of port connection 'dina' does not match port width (8) of module 'blk_mem_gen_0' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:339]
+WARNING: [Synth 8-689] width (24) of port connection 'doutb' does not match port width (8) of module 'blk_mem_gen_0' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:343]
+WARNING: [Synth 8-3848] Net cutoff_freq in module/entity Calculate does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'Calculate' (18#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'dout_xl' does not match port width (24) of module 'Calculate' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:168]
+WARNING: [Synth 8-689] width (24) of port connection 'input_res_q' does not match port width (16) of module 'Calculate' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:169]
+WARNING: [Synth 8-350] instance 'calculate_top' of module 'Calculate' requires 23 connections, but only 22 given [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:154]
+WARNING: [Synth 8-3848] Net clk_xl in module/entity dds_top does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:60]
+WARNING: [Synth 8-3848] Net en_xl in module/entity dds_top does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:61]
+WARNING: [Synth 8-3848] Net output_res in module/entity dds_top does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:66]
+WARNING: [Synth 8-3848] Net dout_x in module/entity dds_top does not have driver. [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:91]
+INFO: [Synth 8-6155] done synthesizing module 'dds_top' (19#1) [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:23]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[7]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[6]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[5]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[4]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[3]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[2]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[1]
+WARNING: [Synth 8-3331] design Calculate has unconnected port cutoff_freq_q[0]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port data_require
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[7]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[6]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[5]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[4]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[3]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[2]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[1]
+WARNING: [Synth 8-3331] design freq_chart has unconnected port din[0]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[7]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[6]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[5]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[4]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[3]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[2]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[1]
+WARNING: [Synth 8-3331] design vga_top has unconnected port freq_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 506.266 ; gain = 186.625
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin chart_ram:data[0] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/vga/freq_chart.v:155]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[23] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[22] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[21] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[20] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[19] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[18] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[17] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[16] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[15] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[14] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[13] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[12] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[11] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[10] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[9] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[8] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[7] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[6] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[5] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[4] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[3] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[2] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[1] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_top_inst:RO_data[0] to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:86]
+WARNING: [Synth 8-3295] tying undriven pin calculate_top:clk_xl to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:154]
+WARNING: [Synth 8-3295] tying undriven pin calculate_top:en_xl to constant 0 [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/dds_top.v:154]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 506.266 ; gain = 186.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 506.266 ; gain = 186.625
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'calculate_top/GainFreqRam'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'calculate_top/GainFreqRam'
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'vga_top_inst/vga_clk_gen'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'vga_top_inst/vga_clk_gen'
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'sweep_top/dac_clk_gen/gen_100m_clk'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'sweep_top/dac_clk_gen/gen_100m_clk'
+Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1/dds_compiler_1_in_context.xdc] for cell 'dds_ip_top'
+Finished Parsing XDC File [c:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1/dds_compiler_1_in_context.xdc] for cell 'dds_ip_top'
+Parsing XDC File [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc]
+Finished Parsing XDC File [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/constrs_1/new/dac14bit.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dds_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dds_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 878.855 ; gain = 0.078
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 878.934 ; gain = 0.074
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 878.934 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 878.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 878.934 ; gain = 559.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 878.934 ; gain = 559.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for calculate_top/GainFreqRam. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for sweep_top/dac_clk_gen/gen_100m_clk. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vga_top_inst/vga_clk_gen. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dds_ip_top. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 878.934 ; gain = 559.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "cnt_v" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'update_state_reg' in module 'freq_chart'
+INFO: [Synth 8-5544] ROM "we" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "update_add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "update_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "update_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "update_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "clk_100k_buf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_1m_buf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "clk_10m_buf" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "peroid_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Av_200" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "load_on_off_switch_reg" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    WAIT |                              001 |                              001
+                UPDATING |                              010 |                              010
+                    DONE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'update_state_reg' in module 'freq_chart'
+WARNING: [Synth 8-327] inferring latch for variable 'input_res_reg' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:110]
+WARNING: [Synth 8-327] inferring latch for variable 'output_res_reg' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:111]
+WARNING: [Synth 8-327] inferring latch for variable 'Av_1k_reg' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:112]
+WARNING: [Synth 8-327] inferring latch for variable 'Av_10k_reg' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:115]
+WARNING: [Synth 8-327] inferring latch for variable 'Av_200_reg' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:116]
+WARNING: [Synth 8-327] inferring latch for variable 'Av_200k_reg' [C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.srcs/sources_1/new/Calculate.v:117]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 878.934 ; gain = 559.293
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |vga_top__GB0  |           1|     24662|
+|2     |vpp_pix       |           1|     10977|
+|3     |vga_top__GB2  |           1|     22204|
+|4     |dds_top__GC0  |           1|      8139|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 17    
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	              160 Bit    Registers := 5     
+	               20 Bit    Registers := 5     
+	               16 Bit    Registers := 598   
+	               12 Bit    Registers := 10    
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 42    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 18    
++---Multipliers : 
+	                11x32  Multipliers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	   4 Input     80 Bit        Muxes := 5     
+	   3 Input     24 Bit        Muxes := 1     
+	  14 Input     16 Bit        Muxes := 17    
+	  11 Input     16 Bit        Muxes := 10    
+	   8 Input     16 Bit        Muxes := 5     
+	  16 Input     16 Bit        Muxes := 5     
+	   4 Input     16 Bit        Muxes := 10    
+	   3 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 9     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	  32 Input      4 Bit        Muxes := 33    
+	   2 Input      4 Bit        Muxes := 2     
+	  32 Input      3 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 10    
+	  32 Input      2 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 30    
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module dds_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+Module data_change__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 2     
+Module vpp_pix 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	              160 Bit    Registers := 1     
+	               16 Bit    Registers := 112   
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     80 Bit        Muxes := 1     
+	  14 Input     16 Bit        Muxes := 3     
+	  11 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 1     
+	  16 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  32 Input      4 Bit        Muxes := 6     
+	  32 Input      3 Bit        Muxes := 1     
+	  32 Input      2 Bit        Muxes := 1     
+Module vga_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module data_change__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 2     
+Module RI_pix 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	              160 Bit    Registers := 1     
+	               16 Bit    Registers := 128   
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     80 Bit        Muxes := 1     
+	  14 Input     16 Bit        Muxes := 4     
+	  11 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 1     
+	  16 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  32 Input      4 Bit        Muxes := 7     
+	  32 Input      3 Bit        Muxes := 1     
+	  32 Input      2 Bit        Muxes := 2     
+Module data_change__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 2     
+Module RO_pix 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	              160 Bit    Registers := 1     
+	               16 Bit    Registers := 134   
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     80 Bit        Muxes := 1     
+	  14 Input     16 Bit        Muxes := 4     
+	  11 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 1     
+	  16 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 2     
+	   9 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  32 Input      4 Bit        Muxes := 8     
+	  32 Input      3 Bit        Muxes := 1     
+	  32 Input      2 Bit        Muxes := 1     
+Module data_change 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 2     
+Module vmin_pix 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	              160 Bit    Registers := 1     
+	               16 Bit    Registers := 112   
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     80 Bit        Muxes := 1     
+	  14 Input     16 Bit        Muxes := 3     
+	  11 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 1     
+	  16 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  32 Input      4 Bit        Muxes := 6     
+	  32 Input      3 Bit        Muxes := 1     
+	  32 Input      2 Bit        Muxes := 1     
+Module data_change__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 2     
+Module vmax_pix 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	              160 Bit    Registers := 1     
+	               16 Bit    Registers := 112   
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     80 Bit        Muxes := 1     
+	  14 Input     16 Bit        Muxes := 3     
+	  11 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 1     
+	  16 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  32 Input      4 Bit        Muxes := 6     
+	  32 Input      3 Bit        Muxes := 1     
+	  32 Input      2 Bit        Muxes := 1     
+Module ram_dual 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 1     
+Module freq_chart 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module sweep_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 1     
+Module adc_samp_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module all_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module Calculate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 8     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                11x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "freq_chart_inst/update_add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "load_on_off_switch_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Av_200" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP input_res1, operation Mode is: A2*(B:0x3d9).
+DSP Report: register vpp_in_reg is absorbed into DSP input_res1.
+DSP Report: operator input_res1 is absorbed into DSP input_res1.
+INFO: [Synth 8-5546] ROM "sweep_top/dac_clk_gen/clk_1m_buf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "sweep_top/dac_clk_gen/clk_10m_buf" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "adc_samp_top/state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "sweep_top/dac_clk_gen/clk_100k_buf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5784] Optimized 7 bits of RAM "freq_chart_inst/chart_ram/ram_reg" due to constant propagation. Old ram width 8 bits, new ram width 1 bits.
+INFO: [Synth 8-5583] The signal freq_chart_inst/chart_ram/ram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (8 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM freq_chart_inst/chart_ram/ram_reg to conserve power
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_9_reg[8][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_9_reg[9][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_9_reg[10][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_9_reg[17][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_9_reg[23][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_9_reg[25][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_8_reg[18][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_8_reg[17][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_8_reg[25][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_7_reg[21][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_7_reg[23][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[25][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[23][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[22][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[20][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[16][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[15][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[14][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[12][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[9][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[8][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[7][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_5_reg[7][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_5_reg[12][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_5_reg[14][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_5_reg[15][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_5_reg[22][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_5_reg[24][15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga_top_inst/vpp_pix_inst /\data_4_reg[20][15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga_top_inst/vpp_pix_inst /\data_4_reg[17][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_4_reg[16][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_4_reg[15][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_4_reg[14][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_4_reg[13][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_4_reg[9][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_4_reg[12][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_4_reg[10][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_4_reg[7][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_4_reg[6][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_3_reg[13][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_3_reg[14][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_3_reg[5][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_3_reg[7][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_3_reg[17][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_3_reg[20][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_3_reg[22][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_3_reg[23][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_3_reg[24][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_2_reg[24][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_2_reg[21][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_2_reg[20][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_2_reg[19][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_2_reg[18][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_2_reg[16][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_2_reg[15][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_2_reg[14][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_2_reg[13][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_2_reg[12][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_2_reg[8][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_2_reg[7][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_2_reg[6][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_1_reg[7][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_1_reg[8][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_1_reg[9][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_1_reg[10][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_1_reg[22][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_1_reg[24][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_1_reg[6][15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga_top_inst/vpp_pix_inst /\data_0_reg[15][15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga_top_inst/vpp_pix_inst /\data_0_reg[14][15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga_top_inst/vpp_pix_inst /\data_0_reg[13][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_0_reg[12][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_0_reg[7][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_0_reg[6][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_0_reg[24][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_0_reg[23][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_0_reg[22][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_0_reg[21][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_0_reg[18][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_0_reg[17][15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga_top_inst/vpp_pix_inst /\data_0_reg[16][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_9_reg[8][14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga_top_inst/vpp_pix_inst /\data_9_reg[9][14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga_top_inst/vpp_pix_inst /\data_9_reg[10][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_9_reg[17][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_9_reg[23][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_9_reg[25][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_8_reg[18][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_8_reg[17][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_8_reg[25][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_7_reg[21][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_7_reg[23][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[25][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[23][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[22][14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[20][14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[16][14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[15][14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[14][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga_top_inst/vpp_pix_inst /\data_6_reg[12][14] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'vga_top_inst/vpp_pix_inst/temp_reg[14]' (FD) to 'vga_top_inst/vpp_pix_inst/temp_reg[13]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[158]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[157]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[157]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[156]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[155]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[154]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[154]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[153]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[141]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[130]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[140]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[131]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[139]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[132]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[138]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[133]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[137]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[136]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[136]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[135]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[135]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[134]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[126]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[125]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[125]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[124]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[124]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[123]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[123]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[122]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[122]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[121]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[121]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[120]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[120]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[119]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[119]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[118]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[118]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[117]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[117]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[116]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[116]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[115]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[115]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[114]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[114]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[113]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[30]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[29]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[12]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[8]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[158]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[157]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[157]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[156]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[155]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[154]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[154]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[153]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[141]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[140]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[140]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[139]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[139]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[138]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[138]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[137]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[137]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[134]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[136]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[135]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[134]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[133]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[133]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[132]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[132]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[131]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[131]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[130]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[126]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[125]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[125]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[124]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[124]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[123]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[123]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[122]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[122]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[121]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[121]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[120]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[120]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[119]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[119]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[118]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[118]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[117]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[117]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[116]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[116]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[115]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[115]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[114]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[114]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[113]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[30]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[29]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[12]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[8]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[11]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[4]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/temp_reg[10]' (FD) to 'vga_top_insti_1/RO_pix_inst/temp_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[11]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[4]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RI_pix_inst/temp_reg[10]' (FD) to 'vga_top_insti_1/RI_pix_inst/temp_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmin_pix_inst/ri_inst/reg_temp_reg[19]' (FDCE) to 'vga_top_insti_2/vmin_pix_inst/ri_inst/reg_temp_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmax_pix_inst/ri_inst/reg_temp_reg[19]' (FDCE) to 'vga_top_insti_2/vmax_pix_inst/ri_inst/reg_temp_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmin_pix_inst/ri_inst/q1_reg[3]' (FDCE) to 'vga_top_insti_2/vmin_pix_inst/ri_inst/point_flag_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmin_pix_inst/ri_inst/reg_temp_reg[2]' (FDCE) to 'vga_top_insti_2/vmin_pix_inst/ri_inst/reg_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmin_pix_inst/ri_inst/reg_temp_reg[3]' (FDCE) to 'vga_top_insti_2/vmin_pix_inst/ri_inst/reg_temp_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmax_pix_inst/ri_inst/q1_reg[3]' (FDCE) to 'vga_top_insti_2/vmax_pix_inst/ri_inst/point_flag_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmax_pix_inst/ri_inst/reg_temp_reg[2]' (FDCE) to 'vga_top_insti_2/vmax_pix_inst/ri_inst/reg_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmax_pix_inst/ri_inst/reg_temp_reg[3]' (FDCE) to 'vga_top_insti_2/vmax_pix_inst/ri_inst/reg_temp_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmin_pix_inst/ri_inst/point_flag_reg[0]' (FDCE) to 'vga_top_insti_2/vmin_pix_inst/ri_inst/kilo_flag_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmin_pix_inst/ri_inst/point_flag_reg[1]' (FDCE) to 'vga_top_insti_2/vmin_pix_inst/ri_inst/reg_temp_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmin_pix_inst/ri_inst/kilo_flag_reg[1]' (FDCE) to 'vga_top_insti_2/vmin_pix_inst/ri_inst/reg_temp_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmax_pix_inst/ri_inst/point_flag_reg[0]' (FDCE) to 'vga_top_insti_2/vmax_pix_inst/ri_inst/kilo_flag_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmax_pix_inst/ri_inst/point_flag_reg[1]' (FDCE) to 'vga_top_insti_2/vmax_pix_inst/ri_inst/reg_temp_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmax_pix_inst/ri_inst/kilo_flag_reg[1]' (FDCE) to 'vga_top_insti_2/vmax_pix_inst/ri_inst/reg_temp_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmin_pix_inst/temp_reg[14]' (FD) to 'vga_top_insti_2/vmin_pix_inst/temp_reg[13]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmax_pix_inst/temp_reg[14]' (FD) to 'vga_top_insti_2/vmax_pix_inst/temp_reg[13]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmin_pix_inst/temp_reg[13]' (FD) to 'vga_top_insti_2/vmin_pix_inst/temp_reg[12]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_2/vmax_pix_inst/temp_reg[13]' (FD) to 'vga_top_insti_2/vmax_pix_inst/temp_reg[12]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/d1_reg[3]' (FDC) to 'vga_top_insti_1/RO_pix_inst/inst3/d4_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/d1_reg[1]' (FDC) to 'vga_top_insti_1/RO_pix_inst/inst3/d4_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/d1_reg[0]' (FDC) to 'vga_top_insti_1/RO_pix_inst/inst3/d4_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/d1_reg[2]' (FDC) to 'vga_top_insti_1/RO_pix_inst/inst3/d4_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/d4_reg[3]' (FDC) to 'vga_top_insti_1/RO_pix_inst/inst3/d4_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/d4_reg[1]' (FDC) to 'vga_top_insti_1/RO_pix_inst/inst3/d4_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/d4_reg[0]' (FDC) to 'vga_top_insti_1/RO_pix_inst/inst3/d4_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/reg_temp_reg[19]' (FDCE) to 'vga_top_insti_1/RO_pix_inst/inst3/reg_temp_reg[18]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/reg_temp_reg[17]' (FDCE) to 'vga_top_insti_1/RO_pix_inst/inst3/reg_temp_reg[18]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/reg_temp_reg[16]' (FDCE) to 'vga_top_insti_1/RO_pix_inst/inst3/reg_temp_reg[18]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/reg_temp_reg[18]' (FDCE) to 'vga_top_insti_1/RO_pix_inst/inst3/reg_temp_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/reg_temp_reg[7]' (FDCE) to 'vga_top_insti_1/RO_pix_inst/inst3/reg_temp_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/reg_temp_reg[5]' (FDCE) to 'vga_top_insti_1/RO_pix_inst/inst3/reg_temp_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/reg_temp_reg[4]' (FDCE) to 'vga_top_insti_1/RO_pix_inst/inst3/reg_temp_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/reg_temp_reg[6]' (FDCE) to 'vga_top_insti_1/RO_pix_inst/inst3/reg_temp_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/q1_reg[3]' (FDCE) to 'vga_top_insti_1/RO_pix_inst/inst3/point_flag_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/q1_reg[1]' (FDCE) to 'vga_top_insti_1/RO_pix_inst/inst3/point_flag_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/q1_reg[0]' (FDCE) to 'vga_top_insti_1/RO_pix_inst/inst3/point_flag_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/q1_reg[2]' (FDCE) to 'vga_top_insti_1/RO_pix_inst/inst3/point_flag_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga_top_insti_1/RO_pix_inst/inst3/q4_reg[3]' (FDCE) to 'vga_top_insti_1/RO_pix_inst/inst3/point_flag_reg[1]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:49 ; elapsed = 00:01:52 . Memory (MB): peak = 921.180 ; gain = 601.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-------------------------+---------------+----------------+
+|Module Name | RTL Object              | Depth x Width | Implemented As | 
++------------+-------------------------+---------------+----------------+
+|sweep_ctrl  | ten_per_cnt             | 256x19        | LUT            | 
+|sweep_ctrl  | dds_ctrl_data           | 256x9         | LUT            | 
+|dds_top     | sweep_top/ten_per_cnt   | 256x19        | LUT            | 
+|dds_top     | sweep_top/dds_ctrl_data | 256x9         | LUT            | 
++------------+-------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram_dual:   | ram_reg    | 256 x 8(NO_CHANGE)     | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Calculate   | A2*(B:0x3d9) | 12     | 10     | -      | -      | 22     | 1    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance vga_top_insti_2/i_0/freq_chart_inst/chart_ram/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |vga_top__GB0  |           1|      4200|
+|2     |vpp_pix       |           1|      2560|
+|3     |vga_top__GB2  |           1|      5283|
+|4     |dds_top__GC0  |           1|      1715|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'vga_clk_gen/clk_out1' to pin 'vga_clk_gen/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'sweep_top/dac_clk_gen/gen_100m_clk/clk_out1' to pin 'sweep_top/dac_clk_gen/gen_100m_clk/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:02 ; elapsed = 00:02:05 . Memory (MB): peak = 921.180 ; gain = 601.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:06 ; elapsed = 00:02:09 . Memory (MB): peak = 991.238 ; gain = 671.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram_dual:   | ram_reg    | 256 x 8(NO_CHANGE)     | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |vga_top__GB0  |           1|      4200|
+|2     |vpp_pix       |           1|      2560|
+|3     |vga_top__GB2  |           1|      5283|
+|4     |dds_top__GC0  |           1|      1715|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance vga_top_inst/freq_chart_inst/chart_ram/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:12 ; elapsed = 00:02:15 . Memory (MB): peak = 1246.273 ; gain = 926.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:14 ; elapsed = 00:02:17 . Memory (MB): peak = 1246.273 ; gain = 926.633
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:14 ; elapsed = 00:02:17 . Memory (MB): peak = 1246.273 ; gain = 926.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:14 ; elapsed = 00:02:17 . Memory (MB): peak = 1246.273 ; gain = 926.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:14 ; elapsed = 00:02:17 . Memory (MB): peak = 1246.273 ; gain = 926.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:15 ; elapsed = 00:02:18 . Memory (MB): peak = 1246.273 ; gain = 926.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:15 ; elapsed = 00:02:18 . Memory (MB): peak = 1246.273 ; gain = 926.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dds_compiler_1 |         1|
+|2     |blk_mem_gen_0  |         1|
+|3     |clk_wiz_0      |         2|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |blk_mem_gen_0  |     1|
+|2     |clk_wiz_0      |     1|
+|3     |clk_wiz_0__2   |     1|
+|4     |dds_compiler_1 |     1|
+|5     |BUFG           |     1|
+|6     |CARRY4         |   335|
+|7     |DSP48E1        |     1|
+|8     |LUT1           |   117|
+|9     |LUT2           |   309|
+|10    |LUT3           |   985|
+|11    |LUT4           |   218|
+|12    |LUT5           |   230|
+|13    |LUT6           |  2021|
+|14    |MUXF7          |   438|
+|15    |MUXF8          |   193|
+|16    |RAMB18E1       |     1|
+|17    |FDCE           |   252|
+|18    |FDPE           |     1|
+|19    |FDRE           |   784|
+|20    |FDSE           |    23|
+|21    |LDC            |    16|
+|22    |IBUF           |    14|
+|23    |OBUF           |    47|
++------+---------------+------+
+
+Report Instance Areas: 
++------+--------------------+--------------+------+
+|      |Instance            |Module        |Cells |
++------+--------------------+--------------+------+
+|1     |top                 |              |  6032|
+|2     |  adc_samp_top      |adc_samp_ctrl |    37|
+|3     |  calculate_top     |Calculate     |  1843|
+|4     |  sweep_top         |sweep_ctrl    |    90|
+|5     |    dac_clk_gen     |clk_div       |    23|
+|6     |  vga_top_inst      |vga_top       |  3945|
+|7     |    RO_pix_inst     |RO_pix        |    73|
+|8     |    RI_pix_inst     |RI_pix        |   415|
+|9     |      ri_inst       |data_change_2 |   181|
+|10    |    freq_chart_inst |freq_chart    |    30|
+|11    |      chart_ram     |ram_dual      |     1|
+|12    |    vga_ctrl_inst   |vga_ctrl      |  2091|
+|13    |    vmax_pix_inst   |vmax_pix      |   333|
+|14    |      ri_inst       |data_change_1 |   137|
+|15    |    vmin_pix_inst   |vmin_pix      |   294|
+|16    |      ri_inst       |data_change_0 |   137|
+|17    |    vpp_pix_inst    |vpp_pix       |   706|
+|18    |      ri_inst       |data_change   |    56|
++------+--------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:15 ; elapsed = 00:02:18 . Memory (MB): peak = 1246.273 ; gain = 926.633
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:01 ; elapsed = 00:02:09 . Memory (MB): peak = 1246.273 ; gain = 553.965
+Synthesis Optimization Complete : Time (s): cpu = 00:02:15 ; elapsed = 00:02:18 . Memory (MB): peak = 1246.273 ; gain = 926.633
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 984 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1246.273 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LDC => LDCE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+394 Infos, 172 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:18 ; elapsed = 00:02:21 . Memory (MB): peak = 1246.273 ; gain = 938.141
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1246.273 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/WorkSpace/Diansai/DDS_ALL_0722_per_split/DDS_14bitDAC/DDS_IP.runs/synth_1/dds_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dds_top_utilization_synth.rpt -pb dds_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 26 08:47:07 2021...

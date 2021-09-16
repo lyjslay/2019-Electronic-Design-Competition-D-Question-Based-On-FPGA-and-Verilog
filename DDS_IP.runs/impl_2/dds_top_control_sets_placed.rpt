@@ -1,0 +1,94 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Jul 26 08:48:48 2021
+| Host         : DESKTOP-OA2P2AF running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file dds_top_control_sets_placed.rpt
+| Design       : dds_top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    24 |
+| Unused register locations in slices containing registers |    82 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|      6 |            1 |
+|      7 |            1 |
+|      8 |            1 |
+|     10 |            4 |
+|     12 |            6 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             674 |          259 |
+| No           | No                    | Yes                    |              89 |           45 |
+| No           | Yes                   | No                     |             203 |           88 |
+| Yes          | No                    | No                     |              12 |            5 |
+| Yes          | No                    | Yes                    |             164 |           81 |
+| Yes          | Yes                   | No                     |              24 |            7 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------+----------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|               Clock Signal              |                    Enable Signal                   |                    Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++-----------------------------------------+----------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|  sys_clk_IBUF_BUFG                      |                                                    | vga_top_inst/vga_ctrl_inst/cnt_v_reg[4]_4             |                2 |              4 |
+|  sys_clk_IBUF_BUFG                      |                                                    | vga_top_inst/vga_ctrl_inst/cnt_v_reg[4]_7             |                5 |              6 |
+|  sys_clk_IBUF_BUFG                      |                                                    | sweep_top/dac_clk_gen/clk_100k_buf                    |                2 |              7 |
+|  sys_clk_IBUF_BUFG                      | vga_top_inst/freq_chart_inst/update_add[7]_i_1_n_0 | vga_top_inst/vpp_pix_inst/ri_inst/rst_n               |                2 |              8 |
+|  sys_clk_IBUF_BUFG                      |                                                    | vga_top_inst/vmin_pix_inst/ri_inst/kilo_flag_reg[0]_0 |                5 |             10 |
+|  sys_clk_IBUF_BUFG                      |                                                    | vga_top_inst/vmax_pix_inst/ri_inst/kilo_flag_reg[0]_0 |                6 |             10 |
+|  sys_clk_IBUF_BUFG                      |                                                    | vga_top_inst/vpp_pix_inst/ri_inst/kilo_flag_reg[0]_0  |                4 |             10 |
+|  vga_top_inst/vga_clk_gen/inst/clk_out1 | vga_top_inst/vga_ctrl_inst/cnt_v0                  | vga_top_inst/vpp_pix_inst/ri_inst/rst_n               |                6 |             10 |
+|  sys_clk_IBUF_BUFG                      |                                                    | vga_top_inst/RI_pix_inst/ri_inst/kilo_flag_reg[0]_0   |                4 |             12 |
+|  sys_clk_IBUF_BUFG                      | calculate_top/in_current_min[11]_i_1_n_0           | sweep_top/SR[0]                                       |                3 |             12 |
+|  sys_clk_IBUF_BUFG                      | calculate_top/in_current_max0_carry__0_n_2         | sweep_top/SR[0]                                       |                4 |             12 |
+|  sys_clk_IBUF_BUFG                      | adc_samp_top/ad_data_reg_inferred__0/i__n_0        | vga_top_inst/vpp_pix_inst/ri_inst/rst_n               |                4 |             12 |
+|  sys_clk_IBUF_BUFG                      | sweep_top/E[0]                                     |                                                       |                5 |             12 |
+|  vga_top_inst/vga_clk_gen/inst/clk_out1 |                                                    | vga_top_inst/vpp_pix_inst/ri_inst/rst_n               |                6 |             12 |
+|                                         |                                                    | vga_top_inst/vpp_pix_inst/ri_inst/rst_n               |               16 |             16 |
+|  sys_clk_IBUF_BUFG                      |                                                    | calculate_top/load_time_cnt[0]_i_1_n_0                |                5 |             19 |
+|  sys_clk_IBUF_BUFG                      |                                                    | sweep_top/cnt[0]_i_1_n_0                              |                6 |             24 |
+|  sys_clk_IBUF_BUFG                      |                                                    | vga_top_inst/vmin_pix_inst/ri_inst/kilo_flag_reg[0]_1 |               13 |             28 |
+|  sys_clk_IBUF_BUFG                      |                                                    | vga_top_inst/vpp_pix_inst/i_/temp[31]_i_1_n_0         |               11 |             28 |
+|  sys_clk_IBUF_BUFG                      |                                                    | vga_top_inst/vmax_pix_inst/ri_inst/kilo_flag_reg[0]_1 |                8 |             28 |
+|  sys_clk_IBUF_BUFG                      |                                                    | vga_top_inst/vpp_pix_inst/ri_inst/rst_n               |               40 |             78 |
+|  sweep_top/dac_clk_gen/aclk_BUFG        |                                                    |                                                       |               22 |             91 |
+|  vga_top_inst/vga_clk_gen/inst/clk_out1 | vga_top_inst/vga_ctrl_inst/update_flag             | vga_top_inst/vpp_pix_inst/ri_inst/rst_n               |               69 |            134 |
+|  sys_clk_IBUF_BUFG                      |                                                    |                                                       |              237 |            584 |
++-----------------------------------------+----------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+
+

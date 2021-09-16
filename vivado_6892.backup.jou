@@ -1,0 +1,94 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 22 10:47:16 2021
+# Process ID: 6892
+# Current directory: E:/DS/DDS_ALL/DDS_14bitDAC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9600 E:\DS\DDS_ALL\DDS_14bitDAC\DDS_IP.xpr
+# Log file: E:/DS/DDS_ALL/DDS_14bitDAC/vivado.log
+# Journal file: E:/DS/DDS_ALL/DDS_14bitDAC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/DS/DDS_ALL/DDS_14bitDAC/DDS_IP.xpr
+update_compile_order -fileset sources_1
+reset_run dds_compiler_1_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_simulation -mode post-synthesis -type timing
+open_wave_config E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg
+source Calculate_tb.tcl
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/sum_in_max}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/sum_in_min}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/aver_in_max}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/aver_in_min}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/in_current_max}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/in_current_min}} 
+restart
+restart
+run all
+launch_simulation
+open_wave_config E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg
+source Calculate_tb.tcl
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/circuit_in_sig}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/in_current_max}} {{/Calculate_tb/calculate_top/in_current_min}} {{/Calculate_tb/calculate_top/sum_in_max}} {{/Calculate_tb/calculate_top/sum_in_min}} {{/Calculate_tb/calculate_top/aver_in_max}} {{/Calculate_tb/calculate_top/aver_in_min}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/sweep_onefreq_done}} {{/Calculate_tb/calculate_top/sweep_oneper_done}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/freq_mode}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/current_freq}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/current_Av}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/input_res}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/output_res}} 
+restart
+restart
+run all
+run all
+restart
+restart
+close_sim
+launch_simulation
+open_wave_config E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg
+source Calculate_tb.tcl
+close_sim
+launch_simulation
+open_wave_config E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg
+source Calculate_tb.tcl
+restart
+restart
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/circuit_in_sig}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/freq_mode}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/current_freq}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/sweep_onefreq_done}} {{/Calculate_tb/calculate_top/sweep_oneper_done}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/input_res_q}} {{/Calculate_tb/calculate_top/output_res_q}} {{/Calculate_tb/calculate_top/Av_1k_q}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/in_current_max}} {{/Calculate_tb/calculate_top/sum_in_max}} {{/Calculate_tb/calculate_top/aver_in_max}} 
+current_wave_config {dds_ip_test_behav.wcfg}
+add_wave {{/Calculate_tb/calculate_top/current_Av}} 
+restart
+restart
+run all
+restart
+save_wave_config {E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/DS/DDS_ALL/DDS_14bitDAC/dds_ip_test_behav.wcfg
+source Calculate_tb.tcl
